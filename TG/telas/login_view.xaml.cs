@@ -29,7 +29,7 @@ namespace TG
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
+            var usuario = new Usuario{ NomeUsuario = nomeUsuario.Text, Senha = senha.Password};
             var colab = new Home_view(usuario);
             Hide();
             colab.ShowDialog();
