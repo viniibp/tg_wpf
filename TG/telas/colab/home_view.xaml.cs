@@ -15,7 +15,7 @@ namespace TG.telas.colab
         {
             InitializeComponent();
             currentUser = u;
-            teste.Content = currentUser.Username;
+            teste.Content = currentUser.NomeUsuario;
         }
     }
 }
