@@ -12,7 +12,7 @@ namespace TG.telas.colab
         private Usuario currentUser;
 
         public Home_view(Usuario u)
-        {
+        {//kk
             InitializeComponent();
             currentUser = u;
             teste.Content = currentUser.NomeUsuario;
