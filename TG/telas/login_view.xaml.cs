@@ -19,8 +19,18 @@ namespace TG
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
             var colab = new Home_view(usuario);
             Hide();
+            LimparCampos();
             colab.ShowDialog();
             Show();
+            nomeUsuario.Focus();
+
         }
+
+        private void LimparCampos()
+        {
+            nomeUsuario.Clear();
+            senha.Clear();
+        }
+
     }
 }
