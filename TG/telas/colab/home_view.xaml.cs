@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using TG.controles;
 using TG.modelos;
 
 namespace TG.telas.colab
@@ -9,13 +10,24 @@ namespace TG.telas.colab
     public partial class Home_view : Window
     {
 
-        private Usuario currentUser;
+        private Usuario usuarioCorrente;
 
         public Home_view(Usuario u)
         {//kk
             InitializeComponent();
-            currentUser = u;
-            teste.Content = currentUser.NomeUsuario;
+            usuarioCorrente = u;
+            teste.Content = usuarioCorrente.Username;
+            Load();
+        }
+
+        private void Load()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Curso c = new Curso();
+                painel.Children.Add(c);
+                c.Text(i.ToString());
+            }
         }
     }
 }

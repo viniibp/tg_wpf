@@ -1,4 +1,7 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
+using System.Collections.Generic;
+using System.Linq;
 using TG.modelos;
 
 namespace TG.banco
@@ -13,34 +16,18 @@ namespace TG.banco
             collection = GetConnection().GetCollection<Colaborador>("Funcionario");
         }
 
-        public void Create()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void Create(Colaborador colab) => collection.InsertOne(colab);
 
-        public void Delete()
-        {
-            throw new System.NotImplementedException();
-        }
+        public Colaborador Find(Colaborador colab) => collection.Find(c =>  c.Nome.Contains(colab.Nome)).First();
 
-        public Colaborador Find()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void Remove(Colaborador colab) => collection.DeleteOne(f => f.Id == colab.Id);
 
-        public Colaborador FindAll()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void Update(Colaborador colab) => collection.ReplaceOne(f => f.Id == colab.Id, colab);
 
-        public void Remove()
-        {
-            throw new System.NotImplementedException();
-        }
+        public List<Colaborador> FindAll() => collection.Find(_ => true).ToList();
 
-        public void Update()
-        {
-            throw new System.NotImplementedException();
-        }
+        public int Ranking(ObjectId id) =>
+            FindAll().OrderBy(f => f.GerenciadorCursos().Pontuacao()).ToList().FindIndex(c => c.Id == id);
+
     }
 }

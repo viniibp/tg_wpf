@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 using TG.modelos;
 using TG.telas.colab;
 
@@ -29,7 +16,7 @@ namespace TG
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var usuario = new Usuario{ NomeUsuario = nomeUsuario.Text, Senha = senha.Password};
+            var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
             var colab = new Home_view(usuario);
             Hide();
             colab.ShowDialog();

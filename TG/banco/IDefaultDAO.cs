@@ -8,14 +8,14 @@ namespace TG.banco
 {
     interface IDefaultDAO<T>
     {
-        void Create();
+        void Create(T colab);
 
-        T Find();
+        T Find(T colab);
 
-        T FindAll();
+        List<T> FindAll();
 
-        void Update();
+        void Update(T colab);
 
-        void Remove();
+        void Remove(T colab);
     }
 }

@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="TG.controles.Curso"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TG.controles"
+             mc:Ignorable="d" Height="113" Width="370">
+    <Grid  Background="White" Height="130">
+        <Border Background="White" BorderBrush="Black" OpacityMask="#FFFF8B8B" BorderThickness="1" Margin="0,10,0,24" >
+            <Label x:Name="teste" Content="PlaceHolder" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+        </Border>
+    </Grid>
+</UserControl>
