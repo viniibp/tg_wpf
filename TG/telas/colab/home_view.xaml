@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="home_view" Height="450" Width="800">
     <Grid>
-        <Label x:Name="teste" HorizontalAlignment="Left" Margin="257,174,0,0" VerticalAlignment="Top" Width="206"/>
+        <Grid HorizontalAlignment="Left" Height="189" Margin="10,10,0,0" VerticalAlignment="Top" Width="357">
+            <Label x:Name="teste" HorizontalAlignment="Left" Margin="69,25,0,0" VerticalAlignment="Top" Width="206" Content="User logado"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="69,64,0,0" VerticalAlignment="Top" Width="100"/>
+        </Grid>
+        <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="365,463,0,-143" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
