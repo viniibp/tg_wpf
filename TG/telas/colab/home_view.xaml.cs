@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using TG.controles;
 using TG.modelos;
+using TG.telas.colab.dados;
 
 namespace TG.telas.colab
 {
@@ -18,6 +19,12 @@ namespace TG.telas.colab
             usuarioCorrente = u;
             teste.Content = usuarioCorrente.Username;
             Load();
+        }
+
+        private void AbrirDadosPage(object sender, RoutedEventArgs e)
+        {
+            Dados dadosPage = new Dados();
+            Content = dadosPage;
         }
 
         private void Load()

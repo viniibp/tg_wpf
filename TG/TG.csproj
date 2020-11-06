@@ -131,9 +131,30 @@
     <Compile Include="modelos\Documentacao\Documentos.cs" />
     <Compile Include="modelos\Formacao.cs" />
     <Compile Include="modelos\Gerenciador\GerenciadorCursos.cs" />
+    <Compile Include="telas\colab\dados\Alteraveis.xaml.cs">
+      <DependentUpon>Alteraveis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="telas\colab\dados\Dados.xaml.cs">
+      <DependentUpon>Dados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="telas\colab\dados\Inalteraveis.xaml.cs">
+      <DependentUpon>Inalteraveis.xaml</DependentUpon>
+    </Compile>
     <Compile Include="utilidades\md5.cs" />
     <Compile Include="utilidades\userType.cs" />
     <Page Include="controles\Curso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\dados\Alteraveis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\dados\Dados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\dados\Inalteraveis.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TG.telas.colab"
         mc:Ignorable="d"
-        Title="Tela inicial" Height="543" Width="1244" WindowStartupLocation="CenterScreen">
+        Title="Tela inicial" Height="720" Width="1080" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label x:Name="teste" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="206">
             <Label.BorderBrush>
@@ -18,6 +18,7 @@
         <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="300" Width="510" VerticalAlignment="Center" HorizontalAlignment="Center">
             <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ElementName=Scroll, Path=ViewportHeight}"/>
         </ScrollViewer>
+        <Button Content="Dados&#xD;&#xA;" HorizontalAlignment="Left" Margin="968,136,0,0" VerticalAlignment="Top" Width="75" Click="AbrirDadosPage"/>
 
     </Grid>
 </Window>

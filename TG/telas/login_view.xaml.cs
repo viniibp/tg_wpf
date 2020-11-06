@@ -32,5 +32,9 @@ namespace TG
             senha.Clear();
         }
 
+        private void Fechar(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
