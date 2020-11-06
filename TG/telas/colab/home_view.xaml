@@ -18,7 +18,8 @@
         <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="300" Width="510" VerticalAlignment="Center" HorizontalAlignment="Center">
             <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ElementName=Scroll, Path=ViewportHeight}"/>
         </ScrollViewer>
-        <Button Content="Dados&#xD;&#xA;" HorizontalAlignment="Left" Margin="968,136,0,0" VerticalAlignment="Top" Width="75" Click="AbrirDadosPage"/>
+        <Button Content="Dados" HorizontalAlignment="Left" Margin="906,210,0,0" VerticalAlignment="Top" Width="74" Click="AbrirDadosPage"/>
+        <Button Content="Cursos Detalhados" HorizontalAlignment="Left" Margin="858,264,0,0" VerticalAlignment="Top" Width="168" Click="AbrirCursosDetalhados"/>
 
     </Grid>
 </Window>

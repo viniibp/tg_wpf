@@ -36,5 +36,11 @@ namespace TG.telas.colab
                 c.Text(i.ToString());
             }
         }
+
+        private void AbrirCursosDetalhados(object sender, RoutedEventArgs e)
+        {
+            CursosDetalhados cd = new CursosDetalhados();
+            Content = cd;
+        }
     }
 }

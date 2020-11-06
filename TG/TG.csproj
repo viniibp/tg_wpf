@@ -131,6 +131,9 @@
     <Compile Include="modelos\Documentacao\Documentos.cs" />
     <Compile Include="modelos\Formacao.cs" />
     <Compile Include="modelos\Gerenciador\GerenciadorCursos.cs" />
+    <Compile Include="telas\colab\CursosDetalhados.xaml.cs">
+      <DependentUpon>CursosDetalhados.xaml</DependentUpon>
+    </Compile>
     <Compile Include="telas\colab\dados\Alteraveis.xaml.cs">
       <DependentUpon>Alteraveis.xaml</DependentUpon>
     </Compile>
@@ -143,6 +146,10 @@
     <Compile Include="utilidades\md5.cs" />
     <Compile Include="utilidades\userType.cs" />
     <Page Include="controles\Curso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\CursosDetalhados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
