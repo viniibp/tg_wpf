@@ -22,7 +22,7 @@
         <TextBox HorizontalAlignment="Left" Height="24" Margin="72,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="72,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="72,256,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144"/>
-        <TextBox x:Name="piroca"  HorizontalAlignment="Left" Height="24" Margin="72,325,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,325,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Page>

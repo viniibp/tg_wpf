@@ -23,7 +23,7 @@ namespace TG.telas.colab
 
         private void AbrirDadosPage(object sender, RoutedEventArgs e)
         {
-            Dados dadosPage = new Dados(usuarioCorrente.Username);
+            Dados dadosPage = new Dados();
             Content = dadosPage;
         }
 

@@ -6,16 +6,33 @@
       xmlns:local="clr-namespace:TG.telas.colab"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.CursosDetalhados"
       mc:Ignorable="d" 
-      d:DesignHeight="615" d:DesignWidth="1060"
+      d:DesignHeight="720" d:DesignWidth="1080"
       Title="CursosDetalhados">
     <Grid Background="White">
-        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="450,339,0,0" VerticalAlignment="Top" Height="40" Width="176" FontSize="22"/>
-        <Rectangle Height="154" Fill="White" VerticalAlignment="Bottom" Margin="10,0,10,461" RadiusY="10" RadiusX="10">
+        <Rectangle Height="154" Fill="White" VerticalAlignment="Bottom" Margin="10,0,10,556" RadiusY="10" RadiusX="10">
             <Rectangle.Effect>
                 <DropShadowEffect Color="Gray"/>
             </Rectangle.Effect>
         </Rectangle>
         <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="53,63,0,0" VerticalAlignment="Top" Height="26" Width="131" FontSize="16"/>
         <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="864,63,0,0" VerticalAlignment="Top" Height="26" Width="131" FontSize="16"/>
+        <materialDesign:ColorZone Mode="PrimaryMid">
+            <StackPanel Orientation="Horizontal" Margin="2">
+                    <RadioButton
+                        Style="{StaticResource MaterialDesignTabRadioButton}"
+                        Margin="2"
+                        IsChecked="True"
+                        Content="FIRST"
+                        Width="530"
+                        />
+
+                <RadioButton
+                        Style="{StaticResource MaterialDesignTabRadioButton}"
+                        Margin="2"
+                        IsChecked="False"
+                        Content="SECOND"
+                        Width="530"/>
+            </StackPanel>
+        </materialDesign:ColorZone>
     </Grid>
 </Page>
