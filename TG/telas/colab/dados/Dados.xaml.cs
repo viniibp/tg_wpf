@@ -23,19 +23,22 @@ namespace TG.telas.colab.dados
 
         private static List<Brush> cores;
 
-        public Dados()
+        private string username;
+
+        public Dados(string username)
         {
             InitializeComponent();
             cores = new List<Brush>() {
                 bt1.Background.CloneCurrentValue(), // cor clicado
                 bt2.Background.CloneCurrentValue() // cor não clicado
             };
-            baseFrame.Content = new Alteraveis();
+            baseFrame.Content = new Alteraveis(username);
+            this.username = username;
         }
 
         private void AbrirAlteraveis(object sender, RoutedEventArgs e)
         {
-            baseFrame.Content = new Alteraveis();
+            baseFrame.Content = new Alteraveis(username);
             onClick(0, 1);
         }
 
@@ -51,5 +54,9 @@ namespace TG.telas.colab.dados
             bt2.Background = cores[two];
         }
 
+        private void baseFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }
