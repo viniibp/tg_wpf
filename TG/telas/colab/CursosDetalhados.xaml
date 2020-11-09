@@ -6,11 +6,11 @@
       xmlns:local="clr-namespace:TG.telas.colab"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.CursosDetalhados"
       mc:Ignorable="d" 
-      d:DesignHeight="720" d:DesignWidth="1080"
+      d:DesignHeight="615" d:DesignWidth="1060"
       Title="CursosDetalhados">
     <Grid Background="White">
-        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="453,393,0,0" VerticalAlignment="Top" Height="40" Width="176" FontSize="22"/>
-        <Rectangle Height="154" Fill="White" VerticalAlignment="Bottom" Margin="10,0,10,566" RadiusY="10" RadiusX="10">
+        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="450,339,0,0" VerticalAlignment="Top" Height="40" Width="176" FontSize="22"/>
+        <Rectangle Height="154" Fill="White" VerticalAlignment="Bottom" Margin="10,0,10,461" RadiusY="10" RadiusX="10">
             <Rectangle.Effect>
                 <DropShadowEffect Color="Gray"/>
             </Rectangle.Effect>
