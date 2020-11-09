@@ -24,10 +24,5 @@ namespace TG.telas.colab.dados
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

@@ -131,7 +131,10 @@
     <Compile Include="modelos\Documentacao\Documentos.cs" />
     <Compile Include="modelos\Formacao.cs" />
     <Compile Include="modelos\Gerenciador\GerenciadorCursos.cs" />
-    <Compile Include="telas\colab\curso detalhado\CursosDetalhados.xaml.cs">
+    <Compile Include="telas\colab\curso_detalhado\controles\CursoDetalhado.xaml.cs">
+      <DependentUpon>CursoDetalhado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="telas\colab\curso_detalhado\CursosDetalhados.xaml.cs">
       <DependentUpon>CursosDetalhados.xaml</DependentUpon>
     </Compile>
     <Compile Include="telas\colab\dados\Alteraveis.xaml.cs">
@@ -143,13 +146,23 @@
     <Compile Include="telas\colab\dados\Inalteraveis.xaml.cs">
       <DependentUpon>Inalteraveis.xaml</DependentUpon>
     </Compile>
+    <Compile Include="telas\main.xaml.cs">
+      <DependentUpon>main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="telas\colab\home.xaml.cs">
+      <DependentUpon>home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="utilidades\md5.cs" />
     <Compile Include="utilidades\userType.cs" />
     <Page Include="controles\Curso.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="telas\colab\curso detalhado\CursosDetalhados.xaml">
+    <Page Include="telas\colab\curso_detalhado\controles\CursoDetalhado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\curso_detalhado\CursosDetalhados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -165,7 +178,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="telas\colab\home_view.xaml">
+    <Page Include="telas\main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -178,9 +195,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="modelos\Usuario.cs" />
-    <Compile Include="telas\colab\home_view.xaml.cs">
-      <DependentUpon>home_view.xaml</DependentUpon>
-    </Compile>
     <Compile Include="telas\login_view.xaml.cs">
       <DependentUpon>login_view.xaml</DependentUpon>
       <SubType>Code</SubType>

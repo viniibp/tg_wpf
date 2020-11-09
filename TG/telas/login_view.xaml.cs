@@ -17,10 +17,11 @@ namespace TG
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
-            var colab = new Home_view(usuario);
+            //var colab = new Home_view(usuario);
             Hide();
             LimparCampos();
-            colab.ShowDialog();
+            //colab.ShowDialog();
+            new main().ShowDialog();
             Show();
             nomeUsuario.Focus();
 

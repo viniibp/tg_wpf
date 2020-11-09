@@ -51,9 +51,9 @@ namespace TG.telas.colab.dados
             bt2.Background = cores[two];
         }
 
-        private void baseFrame_Navigated(object sender, NavigationEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.GoBack();
         }
     }
 }
