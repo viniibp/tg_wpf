@@ -5,11 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TG.telas.colab.dados"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1080"
       Title="Inalteraveis">
 
     <Grid Background="White">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="388,190,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="715,408,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="4.213,0.875"/>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,46,0,0"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="21,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="21,136,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="21,187,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="21,231,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="21,278,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

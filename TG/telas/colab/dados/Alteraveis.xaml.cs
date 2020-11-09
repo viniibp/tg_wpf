@@ -20,9 +20,15 @@ namespace TG.telas.colab.dados
     /// </summary>
     public partial class Alteraveis : Page
     {
-        public Alteraveis()
+        public Alteraveis(string username)
         {
             InitializeComponent();
+            piroca.Text = username;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -13,6 +13,6 @@
         <Grid HorizontalAlignment="Left" Height="78" Margin="10,10,0,0" VerticalAlignment="Top" Width="1060" Background="#FFEEE3E3"/>
         <Button x:Name="bt1" Content="Alteraveis" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="530" Height="78" Click="AbrirAlteraveis"/>
         <Button x:Name="bt2" Content="Inalteraveis" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Width="530" Height="78" Background="#FFBACAD6" Click="AbrirInalteraveis"/>
-        <Frame x:Name="baseFrame" HorizontalAlignment="Left" Height="615" Margin="10,93,0,0" VerticalAlignment="Top" Width="1060" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="baseFrame" HorizontalAlignment="Left" Height="617" Margin="10,93,0,0" VerticalAlignment="Top" Width="1060" NavigationUIVisibility="Hidden" Navigated="baseFrame_Navigated"/>
     </Grid>
 </Page>
