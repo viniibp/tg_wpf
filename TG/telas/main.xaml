@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:TG.telas.colab"
         mc:Ignorable="d"
         Title="main" Height="720.5" Width="1326.5" WindowStartupLocation="CenterScreen">
-    <Grid HorizontalAlignment="Right" Width="1314">
+    <Grid HorizontalAlignment="Right" Width="1314" Margin="0,0,0,0">
         <Frame x:Name="painel" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Width="1080" Height="620" VerticalAlignment="Bottom"/>
-        <Button Content="Dados pessoais" HorizontalAlignment="Left" Margin="941,0,0,637" Width="146" RenderTransformOrigin="4.24,0.125" Click="Button_Click_1" Height="29" VerticalAlignment="Bottom"/>
-        <Button Content="Pagina inicial" HorizontalAlignment="Left" Margin="674,0,0,635" Width="132" Click="Button_Click" Height="30" VerticalAlignment="Bottom"/>
-        <Button Content="Cursos detalhados" HorizontalAlignment="Left" Margin="402,0,0,637" Width="156" RenderTransformOrigin="4.24,0.125" Click="Button_Click_2" Height="34" VerticalAlignment="Bottom"/>
-        <Separator HorizontalAlignment="Left" Height="5" Margin="232,64,0,0" VerticalAlignment="Top" Width="1080"/>
+        <Button Content="Dados pessoais" HorizontalAlignment="Left" Margin="635,2,0,620" Width="190" RenderTransformOrigin="4.24,0.125" Click="Button_Click_1" Height="Auto"/>
+        <Button Content="Pagina inicial" HorizontalAlignment="Left" Margin="435,2,0,620" Width="190" Click="Button_Click" Height="Auto"/>
+        <Button Content="Cursos detalhados" HorizontalAlignment="Left" Margin="235,2,0,620" Width="190" RenderTransformOrigin="4.24,0.125" Click="Button_Click_2" Height="Auto"/>
+        <Separator HorizontalAlignment="Left" Height="5" Margin="232,0,0,615" VerticalAlignment="Bottom" Width="1080"/>
         <Separator HorizontalAlignment="Right" Height="4" Margin="-112,0,738,341" VerticalAlignment="Bottom" Width="688" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>
