@@ -6,11 +6,11 @@
       xmlns:local="clr-namespace:TG.telas.colab.dados"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.dados.Inalteraveis"
       mc:Ignorable="d" 
-      d:DesignHeight="617" d:DesignWidth="1060"
+      d:DesignHeight="540" d:DesignWidth="1060"
       Title="Inalteraveis">
 
     <Grid Background="White">
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="4.213,0.875" Margin="975,575,0,0"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="4.213,0.875" Margin="951,479,0,0"/>
         <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,46,0,0"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="21,84,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="21,136,0,0" VerticalAlignment="Top"/>

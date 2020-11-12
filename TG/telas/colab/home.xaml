@@ -5,14 +5,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TG.telas"
       mc:Ignorable="d"
-      Title="home" Height="686.441" Width="1074.576">
+      Title="home" Height="620" Width="1074">
 
-    <Grid Height="690" Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="319*"/>
-            <ColumnDefinition Width="774*"/>
-        </Grid.ColumnDefinitions>
-        <Label x:Name="teste" HorizontalAlignment="Left" Margin="97.5,20,0,0" VerticalAlignment="Top" Width="206" Grid.Column="1">
+    <Grid Background="White">
+        <Label x:Name="teste" HorizontalAlignment="Left" Margin="98,20,0,0" VerticalAlignment="Top" Width="206">
             <Label.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -20,7 +16,7 @@
                 </LinearGradientBrush>
             </Label.BorderBrush>
         </Label>
-        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="528" Width="852" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="236,159,4,3" Grid.ColumnSpan="2">
+        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="539" Width="852" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="220,80,2,1">
             <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ElementName=Scroll, Path=ViewportHeight}"/>
         </ScrollViewer>
 

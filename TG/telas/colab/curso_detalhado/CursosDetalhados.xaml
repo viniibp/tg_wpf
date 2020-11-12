@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:TG.telas.colab"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.CursosDetalhados"
       mc:Ignorable="d" 
-      d:DesignHeight="690" d:DesignWidth="1080"
+      d:DesignHeight="620" d:DesignWidth="1080"
       Title="CursosDetalhados">
     <Grid Background="White">
-        <Rectangle Margin="0,24,12,0" RadiusY="10" RadiusX="10" HorizontalAlignment="Right" Width="1054" Height="82" VerticalAlignment="Top">
+        <Rectangle RadiusY="10" RadiusX="10" HorizontalAlignment="Right" Width="1054" Height="82" VerticalAlignment="Top" Margin="0,8,14,0">
 
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
@@ -18,9 +18,9 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="266,54,0,0" VerticalAlignment="Top" Height="26" Width="130" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
-        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="608,54,0,0" VerticalAlignment="Top" Height="26" Width="132" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
-        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="536" Width="1051" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="15,125,14,0" BorderThickness="0,3">
+        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="286,33,0,0" VerticalAlignment="Top" Height="26" Width="130" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="641,33,0,0" VerticalAlignment="Top" Height="26" Width="132" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="510" Width="1051" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="15,104,14,0" BorderThickness="0,3">
             <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ElementName=Scroll, Path=ViewportHeight}"/>
         </ScrollViewer>
     </Grid>

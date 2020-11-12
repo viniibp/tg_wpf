@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TG.telas.colab.curso_detalhado.controles"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.curso_detalhado.controles.CursoDetalhado"
-             mc:Ignorable="d" Width="1060" Height="114">
-    <Grid Margin="0,0,0,10">
-        <Rectangle Height="96"  VerticalAlignment="Bottom"  RadiusY="10" RadiusX="10" Margin="8,0,34,0">
+             mc:Ignorable="d" Width="1054.421" Height="114">
+    <Grid Margin="0,0,1,10">
+        <Rectangle Height="96"  VerticalAlignment="Bottom"  RadiusY="10" RadiusX="10" Margin="8,0,0,0" HorizontalAlignment="Left" Width="1011">
             <Rectangle.Effect>
-                <DropShadowEffect Color="Black"/>
+                <DropShadowEffect Color="Gray"/>
             </Rectangle.Effect>
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">

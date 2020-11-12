@@ -6,13 +6,13 @@
       xmlns:local="clr-namespace:TG.telas.colab.dados"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.dados.Dados"
       mc:Ignorable="d" 
-      d:DesignHeight="720" d:DesignWidth="1080"
+      d:DesignHeight="620" d:DesignWidth="1080"
       Title="Dados">
 
     <Grid Background="White">
         <Grid HorizontalAlignment="Left" Height="56" Margin="10,10,0,0" VerticalAlignment="Top" Width="1060" Background="#FFEEE3E3"/>
         <Button x:Name="bt1" Content="Alteraveis" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="530" Height="56" Click="AbrirAlteraveis"/>
         <Button x:Name="bt2" Content="Inalteraveis" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Width="530" Height="56" Background="#FFBACAD6" Click="AbrirInalteraveis"/>
-        <Frame x:Name="baseFrame" HorizontalAlignment="Left" Height="617" Margin="10,85,0,0" VerticalAlignment="Top" Width="1060" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="baseFrame" HorizontalAlignment="Left" Height="540" Margin="10,76,0,0" VerticalAlignment="Top" Width="1060" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Page>

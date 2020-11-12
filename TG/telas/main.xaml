@@ -5,12 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TG.telas.colab"
         mc:Ignorable="d"
-        Title="main" Height="720" Width="1100" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Frame x:Name="painel" Height="610" Margin="0,0,0,-2" VerticalAlignment="Bottom" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Width="1092"/>
-        <Button Content="Dados pessoais" HorizontalAlignment="Left" Margin="376,0,0,636" Width="147" RenderTransformOrigin="4.24,0.125" Click="Button_Click_1" VerticalAlignment="Bottom"/>
-        <Button Content="Pagina inicial" HorizontalAlignment="Left" Margin="220,0,0,637" Width="133" Click="Button_Click" VerticalAlignment="Bottom"/>
-        <Button Content="Cursos detalhados" HorizontalAlignment="Left" Margin="558,0,0,636" Width="157" RenderTransformOrigin="4.24,0.125" Click="Button_Click_2" VerticalAlignment="Bottom"/>
+        Title="main" Height="720.5" Width="1326.5" WindowStartupLocation="CenterScreen">
+    <Grid HorizontalAlignment="Right" Width="1314">
+        <Frame x:Name="painel" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Width="1080" Height="620" VerticalAlignment="Bottom"/>
+        <Button Content="Dados pessoais" HorizontalAlignment="Left" Margin="941,0,0,637" Width="146" RenderTransformOrigin="4.24,0.125" Click="Button_Click_1" Height="29" VerticalAlignment="Bottom"/>
+        <Button Content="Pagina inicial" HorizontalAlignment="Left" Margin="674,0,0,635" Width="132" Click="Button_Click" Height="30" VerticalAlignment="Bottom"/>
+        <Button Content="Cursos detalhados" HorizontalAlignment="Left" Margin="402,0,0,637" Width="156" RenderTransformOrigin="4.24,0.125" Click="Button_Click_2" Height="34" VerticalAlignment="Bottom"/>
+        <Separator HorizontalAlignment="Left" Height="5" Margin="232,64,0,0" VerticalAlignment="Top" Width="1080"/>
+        <Separator HorizontalAlignment="Right" Height="4" Margin="-112,0,738,341" VerticalAlignment="Bottom" Width="688" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
 
     </Grid>
 </Window>
