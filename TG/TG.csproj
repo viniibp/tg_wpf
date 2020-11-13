@@ -123,6 +123,11 @@
     <Compile Include="controles\Curso.xaml.cs">
       <DependentUpon>Curso.xaml</DependentUpon>
     </Compile>
+    <Compile Include="menu\Enum.cs" />
+    <Compile Include="menu\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="menu\SetupButton.cs" />
     <Compile Include="modelos\Colaborador.cs" />
     <Compile Include="modelos\Documentacao\CarteiraTrabalho.cs" />
     <Compile Include="modelos\Documentacao\Contato.cs" />
@@ -131,6 +136,9 @@
     <Compile Include="modelos\Documentacao\Documentos.cs" />
     <Compile Include="modelos\Formacao.cs" />
     <Compile Include="modelos\Gerenciador\GerenciadorCursos.cs" />
+    <Compile Include="telas\colab\addCurso.xaml.cs">
+      <DependentUpon>addCurso.xaml</DependentUpon>
+    </Compile>
     <Compile Include="telas\colab\curso_detalhado\controles\CursoDetalhado.xaml.cs">
       <DependentUpon>CursoDetalhado.xaml</DependentUpon>
     </Compile>
@@ -146,6 +154,9 @@
     <Compile Include="telas\colab\dados\Inalteraveis.xaml.cs">
       <DependentUpon>Inalteraveis.xaml</DependentUpon>
     </Compile>
+    <Compile Include="telas\colab\Ranking.xaml.cs">
+      <DependentUpon>Ranking.xaml</DependentUpon>
+    </Compile>
     <Compile Include="telas\main.xaml.cs">
       <DependentUpon>main.xaml</DependentUpon>
     </Compile>
@@ -155,6 +166,14 @@
     <Compile Include="utilidades\md5.cs" />
     <Compile Include="utilidades\userType.cs" />
     <Page Include="controles\Curso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="menu\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\addCurso.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,6 +194,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="telas\colab\dados\Inalteraveis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\Ranking.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace TG.telas.colab
 {
@@ -21,22 +10,33 @@ namespace TG.telas.colab
         public main()
         {
             InitializeComponent();
-            painel.Content = new home(new modelos.Usuario());
+            new menu.Menu(container: menuGrid, painel: painel);
+            Abrir(new home(new modelos.Usuario()));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            painel.Content = new home(new modelos.Usuario());
+            Abrir(new home(new modelos.Usuario()));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            painel.Content = new dados.Dados();
+            Abrir(new dados.Dados());
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            painel.Content = new CursosDetalhados();
+            Abrir(new CursosDetalhados());
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Abrir(new addCurso());
+        }
+
+        private void Abrir(Page p)
+        {
+            painel.Content = p;
         }
     }
 }
