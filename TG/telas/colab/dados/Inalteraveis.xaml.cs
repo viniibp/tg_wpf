@@ -1,28 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Media.Effects;
+using TG.modelos.Documentacao;
 
 namespace TG.telas.colab.dados
 {
-    /// <summary>
-    /// Interação lógica para Inalteraveis.xam
-    /// </summary>
     public partial class Inalteraveis : Page
     {
-        public Inalteraveis()
+        private Brush Default, Checked;
+
+        public Inalteraveis(DadosTrabalhistas dadosTrabalhistas = null)
         {
             InitializeComponent();
+            LoadIcons();
+            //LoadDados(dadosTrabalhistas);
+  
         }
+
+        private void LoadDados(DadosTrabalhistas dt)
+        {
+            dataAdmissao.Text = dt.DataAdmissao.ToString();
+            setor.Text = dt.Setor;
+            cargo.Text = dt.Cargo;
+            jornadaSemanal.Text = dt.JornadaTrabalho.ToString();
+            nacionalidade.Text = dt.Nacionalidade;
+            naturalidade.Text = dt.Naturalidade;
+            salario.Text = dt.Salario.ToString();
+            registro.Text = dt.Registro;
+        }
+
+        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+            salario.Effect = null;
+            icon.Foreground = Checked;
+        }
+
+        private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            salario.Effect = new BlurEffect { Radius = 20 };
+            icon.Foreground = Default;
+        }
+
+        private void LoadIcons()
+        {
+            salario.Effect = new BlurEffect { Radius = 20 };
+            Default = icon.Foreground;
+            Checked = toggle.Foreground;
+        }
+
     }
 }
