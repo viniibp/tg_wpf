@@ -4,19 +4,33 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TG.telas.colab.dados"
-      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.dados.Inalteraveis"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      x:Class="TG.telas.colab.dados.Inalteraveis"
       mc:Ignorable="d" 
       d:DesignHeight="540" d:DesignWidth="1060"
       Title="Inalteraveis">
 
     <Grid Background="White">
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="4.213,0.875" Margin="951,479,0,0"/>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,46,0,0"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="21,84,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="21,136,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="21,187,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="21,231,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="21,278,0,0" VerticalAlignment="Top"/>
+        <Label Content="Data de admissão" Margin="0,64,780,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Setor" Margin="0,144,780,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Cargo" Margin="0,224,780,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Jornada Semanal" Margin="0,304,780,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Nacionalidade" Margin="0,384,780,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Naturalidade" Margin="0,464,784,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="134" FontWeight="Bold"/>
+        <Label Content="Salário" Margin="0,195,332,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="73" FontWeight="Bold"/>
+        <Label Content="Registro" Margin="0,322,330,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ToggleButton x:Name="toggle" Margin="939,204,42,0" VerticalAlignment="Top" FontSize="20" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+        <TextBlock x:Name="dataAdmissao" Text="TextBlock" Margin="300,70,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="setor" Margin="300,150,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="cargo" Margin="300,230,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="jornadaSemanal" Margin="300,310,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="nacionalidade" Margin="300,390,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="naturalidade" Margin="300,470,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="salario" Margin="732,200,131,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20">
+
+        </TextBlock>
+        <TextBlock x:Name="registro" Margin="737,327,103,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <materialDesign:PackIcon x:Name="icon" Kind="Visibility" HorizontalAlignment="Left" Margin="939,206,0,0" VerticalAlignment="Top" Foreground="DarkGray" Background="White"/>
 
     </Grid>
 </Page>
