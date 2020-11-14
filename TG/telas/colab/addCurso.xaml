@@ -1,15 +1,43 @@
-﻿<Page x:Class="TG.telas.colab.addCurso"
+﻿<Page
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TG.telas.colab"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.addCurso"
       mc:Ignorable="d" 
       d:DesignHeight="620" d:DesignWidth="1080"
       Title="Adicionar curso" Background="White">
-    
-    <Grid>
-        <Label Content="Add curso" HorizontalAlignment="Left" Margin="492,280,0,0" VerticalAlignment="Top" FontSize="22"/>
+
+    <Grid RenderTransformOrigin="0.504,0.491">
+        <Label Content="Add curso" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label  Content="Nome da instituaição" HorizontalAlignment="Left" Margin="74,125,0,0" VerticalAlignment="Top" Width="187" Height="34" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label Content="Formato do Curso" HorizontalAlignment="Left" Margin="74,209,0,0" VerticalAlignment="Top" Width="232" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+
+        <materialDesign:PackIcon HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="31.125,14.625" Height="44" Margin="594,125,0,0" Width="56" Foreground="DarkGray" Kind="Calendar" />
+        <materialDesign:PackIcon HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="31.125,14.625" Height="44" Margin="594,195,0,0" Width="56" Foreground="DarkGray" Kind="Calendar" />
+        <Label Content="Data De Inicio" HorizontalAlignment="Left" Margin="655,139,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label Content="Data de Conclusão" HorizontalAlignment="Left" Margin="655,209,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" Height="30" RenderTransformOrigin="0.414,-0.833"/>
+        <Label Content="Tempo De Duração" HorizontalAlignment="Left" Margin="74,279,0,0" VerticalAlignment="Top" Width="158" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label Content="Nome do Curso" HorizontalAlignment="Left" Margin="74,360,0,0" VerticalAlignment="Top" Width="158" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label Content="Certitficado" HorizontalAlignment="Left" Margin="74,446,0,0" VerticalAlignment="Top" Width="158" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <ComboBox x:Name="formatoCurso" materialDesign:HintAssist.Hint="Selecione" Style="{StaticResource MaterialDesignFloatingHintComboBox}" HorizontalAlignment="Left" Margin="286,196,0,0" VerticalAlignment="Top" Width="192" SelectionChanged="formatoCurso_SelectionChanged" FontFamily="Champagne &amp; Limousines" FontSize="18" Height="43" >
+            <ComboBoxItem Content="Graduação" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ComboBoxItem Content="Pós-gradução" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ComboBoxItem Content="Mestrado" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ComboBoxItem Content="Doutorado" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ComboBoxItem Content="Pós-Doutorado" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ComboBoxItem Content="Tecnico" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ComboBoxItem Content="Certificação Externa" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        </ComboBox>
+        <TextBox x:Name="tempoDuração" HorizontalAlignment="Left" Height="30" Margin="286,279,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBox x:Name="instituição" HorizontalAlignment="Left" Height="30" Margin="286,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBox x:Name="nomeCurso" HorizontalAlignment="Left" Height="30" Margin="286,360,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <DatePicker x:Name="dataInicio" HorizontalAlignment="Left" Margin="834,139,0,0" VerticalAlignment="Top" Width="194" Height="30"/>
+        <DatePicker x:Name="dataConclusão" HorizontalAlignment="Left" Margin="834,209,0,0" VerticalAlignment="Top" Width="194" Height="30"/>
+        <Button Content="Salvar" HorizontalAlignment="Left" Margin="962,578,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.58,1.109"/>
+        <Viewbox x:Name="certificado" HorizontalAlignment="Left" Height="100" Margin="286,446,0,0" VerticalAlignment="Top" Width="136"/>
+
 
     </Grid>
 </Page>

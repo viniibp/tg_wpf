@@ -24,5 +24,10 @@ namespace TG.telas.colab
         {
             InitializeComponent();
         }
+
+        private void formatoCurso_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
