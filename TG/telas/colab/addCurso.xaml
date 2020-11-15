@@ -10,7 +10,6 @@
       Title="Adicionar curso" Background="White">
 
     <Grid RenderTransformOrigin="0.504,0.491">
-        <Label Content="Add curso" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="22"/>
         <Label  Content="Nome da instituaição" HorizontalAlignment="Left" Margin="74,125,0,0" VerticalAlignment="Top" Width="187" Height="34" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
         <Label Content="Formato do Curso" HorizontalAlignment="Left" Margin="74,209,0,0" VerticalAlignment="Top" Width="232" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
 

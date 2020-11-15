@@ -9,6 +9,7 @@
     <Grid HorizontalAlignment="Right" Width="1314" Margin="0,0,0,0">
         <Grid x:Name="menuGrid" Width="1080" Height="70" Margin="235,1,0,619"/>
         <Frame x:Name="painel" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Width="1080" Height="620" VerticalAlignment="Bottom"/>
+        <Separator HorizontalAlignment="Left" Height="5" Margin="232,0,0,615" VerticalAlignment="Bottom" Width="1080"/>
         <Separator HorizontalAlignment="Right" Height="4" Margin="-112,0,738,341" VerticalAlignment="Bottom" Width="688" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>
@@ -18,6 +19,9 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
+        <Viewbox HorizontalAlignment="Left" Height="215" Margin="10,10,0,0" VerticalAlignment="Top" Width="206"/>
+        <ProgressBar HorizontalAlignment="Left" Height="16" Margin="10,244,0,0" VerticalAlignment="Top" Width="206"/>
+        <Frame Content="Frame" HorizontalAlignment="Left" Height="197" Margin="10,352,0,0" VerticalAlignment="Top" Width="206"/>
 
     </Grid>
 </Window>

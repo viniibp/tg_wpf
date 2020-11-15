@@ -10,19 +10,18 @@
       Title="DadosAlteraveis">
 
     <Grid Background="White">
-        <Label Content="Label" HorizontalAlignment="Left" Margin="31,52,0,0" VerticalAlignment="Top"/>
         <Button Content="Salvar" HorizontalAlignment="Left" Margin="957,492,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" RenderTransformOrigin="0.08,0.359"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="31,98,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="31,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.944,-1.75"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="31,196,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="31,256,0,0" VerticalAlignment="Top"/>
-        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="31,325,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,98,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,256,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,325,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="32,60,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="35,126,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="-7.802,-0.933"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="32,188,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label Content="Titulo de Eleitor:" HorizontalAlignment="Left" Margin="556,70,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="-4.824,8.667"/>
+        <Label Content="RG:" HorizontalAlignment="Left" Margin="35,255,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="32,317,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.373,-1.317"/>
+        <TextBox x:Name="nomeUsuario" HorizontalAlignment="Left" Height="30" Margin="115,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="30" Margin="115,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBlock x:Name="cpf" Margin="115,188,725,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="rg" Margin="115,257,725,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="tituloEleitor" Margin="718,70,122,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+
     </Grid>
 </Page>
