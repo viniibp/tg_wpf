@@ -20,16 +20,14 @@
         <Label Content="Salário" Margin="0,195,332,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="73" FontWeight="Bold"/>
         <Label Content="Registro" Margin="0,322,330,0" FontFamily="Champagne &amp; Limousines" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold"/>
         <ToggleButton x:Name="toggle" Margin="939,204,42,0" VerticalAlignment="Top" FontSize="20" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
-        <TextBlock x:Name="dataAdmissao" Text="TextBlock" Margin="300,70,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="setor" Margin="300,150,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="cargo" Margin="300,230,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="jornadaSemanal" Margin="300,310,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="nacionalidade" Margin="300,390,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="naturalidade" Margin="300,470,540,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="salario" Margin="732,200,131,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20">
-
-        </TextBlock>
-        <TextBlock x:Name="registro" Margin="737,327,103,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="dataAdmissao" Margin="300,70,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="setor" Margin="300,150,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="cargo" Margin="300,230,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="jornadaSemanal" Margin="300,310,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="nacionalidade" Margin="300,390,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="naturalidade" Margin="300,470,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="salario" Margin="732,200,131,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="registro" Margin="737,327,103,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
         <materialDesign:PackIcon x:Name="icon" Kind="Visibility" HorizontalAlignment="Left" Margin="939,206,0,0" VerticalAlignment="Top" Foreground="DarkGray" Background="White"/>
 
     </Grid>
