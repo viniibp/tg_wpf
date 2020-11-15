@@ -17,11 +17,11 @@
         <Label Content="Titulo de Eleitor:" HorizontalAlignment="Left" Margin="556,70,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="-4.824,8.667"/>
         <Label Content="RG:" HorizontalAlignment="Left" Margin="35,255,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
         <Label Content="Telefone:" HorizontalAlignment="Left" Margin="32,317,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.373,-1.317"/>
-        <TextBox x:Name="nomeUsuario" HorizontalAlignment="Left" Height="30" Margin="115,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <TextBox x:Name="email" HorizontalAlignment="Left" Height="30" Margin="115,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <TextBlock x:Name="cpf" Margin="115,188,725,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="rg" Margin="115,257,725,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="tituloEleitor" Margin="718,70,122,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBox x:Name="nomeUsuario" HorizontalAlignment="Left" Height="30" Margin="115,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="30" Margin="115,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBlock x:Name="cpf" Margin="115,188,725,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="rg" Margin="115,257,725,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
+        <TextBlock x:Name="tituloEleitor" Margin="718,70,122,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
 
     </Grid>
 </Page>
