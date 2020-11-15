@@ -1,5 +1,8 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
+using TG.modelos;
 
 namespace TG.telas.colab
 {
@@ -11,12 +14,21 @@ namespace TG.telas.colab
         {
             InitializeComponent();
             new menu.Menu(container: menuGrid, painel: painel);
-            Abrir(new home(new modelos.Usuario()));
+            Abrir(new home(new Usuario()));
+            Colaborador c = Session.GetColaborador();
+            //LoadInfos(c.Formacoes);
+        }
+
+        private void LoadInfos(List<Formacao> f)
+        {
+            modelos.Gerenciador.GerenciadorCursos gc = new modelos.Gerenciador.GerenciadorCursos(f);
+            Nivel.Content = "Nível " + gc.Nivel(nivel, gc.Pontuacao()).Level.ToString();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Abrir(new home(new modelos.Usuario()));
+            Abrir(new home(new Usuario()));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

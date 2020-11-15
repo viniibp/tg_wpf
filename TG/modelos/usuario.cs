@@ -13,5 +13,11 @@ namespace TG.modelos
         {
             return null;
         }
+
+        public void Sair()
+        {
+           
+
+        }
     }
 }

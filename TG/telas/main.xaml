@@ -19,9 +19,11 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <Viewbox HorizontalAlignment="Left" Height="215" Margin="10,10,0,0" VerticalAlignment="Top" Width="206"/>
-        <ProgressBar HorizontalAlignment="Left" Height="16" Margin="10,244,0,0" VerticalAlignment="Top" Width="206"/>
-        <Frame Content="Frame" HorizontalAlignment="Left" Height="197" Margin="10,352,0,0" VerticalAlignment="Top" Width="206"/>
+        <Viewbox HorizontalAlignment="Left" Height="196" Margin="20,20,0,0" VerticalAlignment="Top" Width="191" RenderTransformOrigin="0.864,0.952">
+            <Image x:Name="fotoPerfil" Height="108" Width="105" Source="/TG;component/imagens/user_placeholder.png"/>
+        </Viewbox>
+        <ProgressBar x:Name="nivel" HorizontalAlignment="Left" Height="16" Margin="10,244,0,0" VerticalAlignment="Top" Width="206"/>
+        <Label Content="nivel" x:Name="Nivel" HorizontalAlignment="Left" Margin="79,274,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
