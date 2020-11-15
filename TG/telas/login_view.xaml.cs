@@ -20,12 +20,12 @@ namespace TG
         {
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
             Hide();
-            //LimparCampos();
+            LimparCampos();
             usuario.Entrar();
             System.Console.WriteLine(Session.GetColaborador().Nome);
             new main().ShowDialog();
             Show();
-            //nomeUsuario.Focus();
+            nomeUsuario.Focus();
 
         }
 
