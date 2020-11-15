@@ -9,14 +9,17 @@ namespace TG.telas.colab
 
     public partial class main : Window
     {
+        Colaborador colaborador;
 
         public main()
         {
             InitializeComponent();
             new menu.Menu(container: menuGrid, painel: painel);
             Abrir(new home(new Usuario()));
-            Colaborador c = Session.GetColaborador();
-            //LoadInfos(c.Formacoes);
+
+            colaborador = Session.GetColaborador();
+
+            LoadInfos(colaborador.Formacoes);
         }
 
         private void LoadInfos(List<Formacao> f)
@@ -38,7 +41,7 @@ namespace TG.telas.colab
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Abrir(new CursosDetalhados());
+            Abrir(new CursosDetalhados(colaborador));
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -49,6 +52,12 @@ namespace TG.telas.colab
         private void Abrir(Page p)
         {
             painel.Content = p;
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Session.CloseSession();
+            Close();
         }
     }
 }

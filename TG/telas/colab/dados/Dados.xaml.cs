@@ -41,7 +41,7 @@ namespace TG.telas.colab.dados
 
         private void AbrirInalteraveis(object sender, RoutedEventArgs e)
         {
-            baseFrame.Content = new Inalteraveis();
+            baseFrame.Content = new Inalteraveis(Session.GetColaborador().DadosTrabalhistas[0]);
             onClick(1, 0);
         }
 

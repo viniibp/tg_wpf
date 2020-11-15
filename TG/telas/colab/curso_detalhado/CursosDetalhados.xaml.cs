@@ -22,22 +22,26 @@ namespace TG.telas.colab
     /// </summary>
     public partial class CursosDetalhados : Page
     {
-        private List<Formacao> Formacoes;
         
-        public CursosDetalhados()
+        public CursosDetalhados(Colaborador c)
         {
             InitializeComponent();
-            Formacoes = new List<Formacao> {
-                new Formacao(),
-                new Formacao(),
-                new Formacao(),
-                new Formacao(),
-                new Formacao(),
-                new Formacao(),
-                new Formacao(),
-                new Formacao(),
-            };
-            listarCursos(Formacoes);
+            Carregar(c);
+        }
+
+        private void Carregar(Colaborador c)
+        {
+            var manager = c.GerenciadorCursos();
+            var (media, validos) = manager.CalcularMedia_Validos();
+            var pontos = manager.Pontuacao();
+
+            qtdCursos.Content = manager.TotalCursos().ToString();
+            mediaPesos.Value = int.Parse(media.ToString());
+           // .Text = media.ToString();
+            pontosTotais.Content = pontos.ToString();
+            qtdValidos.Content = validos.ToString();
+
+            ranking.Content = c.Ranking().ToString();
         }
 
         private void listarCursos(List<Formacao> formacoes)

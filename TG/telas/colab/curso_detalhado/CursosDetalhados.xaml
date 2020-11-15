@@ -8,7 +8,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="620" d:DesignWidth="1080"
       Title="CursosDetalhados">
-    <Grid Background="White">
+    <Grid Background="GhostWhite">
         <Rectangle RadiusY="10" RadiusX="10" HorizontalAlignment="Right" Width="1054" Height="82" VerticalAlignment="Top" Margin="0,8,14,0">
 
             <Rectangle.Fill>
@@ -18,10 +18,18 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="286,33,0,0" VerticalAlignment="Top" Height="26" Width="130" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
-        <Label Content="Curso Detalhado" HorizontalAlignment="Left" Margin="641,33,0,0" VerticalAlignment="Top" Height="26" Width="132" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label Content="Cursos" HorizontalAlignment="Left" Margin="116,33,0,0" VerticalAlignment="Top" Height="26" Width="61" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label Content="Validos" HorizontalAlignment="Left" Margin="260,36,0,0" VerticalAlignment="Top" Height="26" Width="69" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
         <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="510" Width="1051" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="15,104,14,0" BorderThickness="0,3">
             <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ElementName=Scroll, Path=ViewportHeight}"/>
         </ScrollViewer>
+        <Label x:Name="qtdCursos" Content="0" HorizontalAlignment="Left" Margin="196,35,0,0" VerticalAlignment="Top" Height="26" Width="60" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label x:Name="qtdValidos" Content="0" HorizontalAlignment="Left" Margin="345,36,0,0" VerticalAlignment="Top" Height="26" Width="60" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label Content="Ranking" HorizontalAlignment="Left" Margin="806,18,0,0" VerticalAlignment="Top" Height="30" Width="69" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label x:Name="ranking" Content="0" HorizontalAlignment="Left" Margin="887,19,0,0" VerticalAlignment="Top" Height="26" Width="60" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label Content="Pontos totais" HorizontalAlignment="Left" Margin="445,35,0,0" VerticalAlignment="Top" Height="30" Width="108" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label x:Name="pontosTotais" Content="0" HorizontalAlignment="Left" Margin="556,36,0,0" VerticalAlignment="Top" Height="26" Width="60" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label Content="Média de pesos" HorizontalAlignment="Left" Margin="735,46,0,0" VerticalAlignment="Top" Height="30" Width="125" FontSize="16" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <materialDesign:RatingBar x:Name="mediaPesos" HorizontalAlignment="Left" Margin="863,50,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

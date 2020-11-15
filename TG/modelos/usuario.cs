@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using TG.banco;
 
 namespace TG.modelos
 {
@@ -9,15 +10,16 @@ namespace TG.modelos
         public string Username { get; set; }
         public string Senha { get; set; }
 
-        public object Entrar()
+        public Colaborador Entrar()
         {
-            return null;
+            Colaborador colaborador = new ColaboradorDAO().Entrar(this);
+            Session.SetSessao(colaborador);
+            return colaborador;
         }
 
         public void Sair()
         {
-           
-
+            Session.CloseSession();
         }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TG.modelos;
+using TG.utilidades;
 
 namespace TG.banco
 {
@@ -16,7 +18,22 @@ namespace TG.banco
             collection = GetConnection().GetCollection<Colaborador>("Funcionario");
         }
 
+        internal Colaborador Entrar(Usuario usuario)
+        {
+            var md5 = new MD5Hash();
+
+            var funcionario = collection.Find(
+                func =>
+                    usuario.Username == func.Username &&
+                    md5.GetMd5Hash(usuario.Senha).Equals(func.Senha)
+            ).SingleOrDefault();
+             
+            return funcionario;
+        }
+
         public void Create(Colaborador colab) => collection.InsertOne(colab);
+
+        public Colaborador Findk() => collection.Find(c => true).First();
 
         public Colaborador Find(Colaborador colab) => collection.Find(c =>  c.Nome.Contains(colab.Nome)).First();
 

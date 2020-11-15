@@ -24,6 +24,10 @@
         </Viewbox>
         <ProgressBar x:Name="nivel" HorizontalAlignment="Left" Height="16" Margin="10,244,0,0" VerticalAlignment="Top" Width="206"/>
         <Label Content="nivel" x:Name="Nivel" HorizontalAlignment="Left" Margin="79,274,0,0" VerticalAlignment="Top"/>
+        <Button Content="{materialDesign:PackIcon Kind=Shutdown}" HorizontalAlignment="Left" Margin="-3,648,0,0" VerticalAlignment="Top" Width="234" RenderTransformOrigin="-0.211,2.188" Height="40" Click="Button_Click_4"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="198" Margin="0,430,0,0" VerticalAlignment="Top" Width="226">
+            <WrapPanel x:Name="top5" />
+        </Border>
 
     </Grid>
 </Window>

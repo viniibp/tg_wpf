@@ -17,6 +17,7 @@ namespace TG.utilidades
             {
                 sb.Append(hash[i].ToString("X2"));
             }
+            System.Console.WriteLine(sb.ToString());
             return sb.ToString();
 
         }

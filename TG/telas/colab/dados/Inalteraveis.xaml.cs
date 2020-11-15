@@ -10,11 +10,11 @@ namespace TG.telas.colab.dados
     {
         private Brush Default, Checked;
 
-        public Inalteraveis(DadosTrabalhistas dadosTrabalhistas = null)
+        public Inalteraveis(DadosTrabalhistas dadosTrabalhistas)
         {
             InitializeComponent();
             LoadIcons();
-            //LoadDados(dadosTrabalhistas);
+            LoadDados(dadosTrabalhistas);
   
         }
 

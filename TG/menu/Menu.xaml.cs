@@ -38,7 +38,7 @@ namespace TG.menu
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Abrir(new CursosDetalhados(), Pages.CursoDetalhado);
+            Abrir(new CursosDetalhados(Session.GetColaborador()), Pages.CursoDetalhado);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

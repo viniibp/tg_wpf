@@ -12,18 +12,20 @@ namespace TG
         public MainWindow()
         {
             InitializeComponent();
+            nomeUsuario.Text = "admin";
+            senha.Password = "123";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
-            //var colab = new Home_view(usuario);
             Hide();
-            LimparCampos();
-            //colab.ShowDialog();
+            //LimparCampos();
+            usuario.Entrar();
+            System.Console.WriteLine(Session.GetColaborador().Nome);
             new main().ShowDialog();
             Show();
-            nomeUsuario.Focus();
+            //nomeUsuario.Focus();
 
         }
 
