@@ -12,17 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TG.modelos;
 
-namespace TG.telas.colab
+namespace TG.telas.colab.rank
 {
     /// <summary>
-    /// Interação lógica para Ranking.xam
+    /// Interação lógica para InfoColaborador.xam
     /// </summary>
-    public partial class Ranking : Page
+    public partial class InfoColaborador : Page
     {
-        public Ranking()
+        public InfoColaborador()
         {
             InitializeComponent();
+        }
+       public void Carregardadosinfo(string nome)
+        {
+            colocacao.Content = 1;
+            nivel.Content = 21;
+            nCursos.Content = 6;
+            nomeUsuario.Content = nome;
         }
     }
 }

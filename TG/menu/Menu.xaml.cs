@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using TG.telas;
 using TG.telas.colab;
+using TG.telas.colab.rank;
 
 namespace TG.menu
 {

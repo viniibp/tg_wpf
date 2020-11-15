@@ -155,7 +155,13 @@
     <Compile Include="telas\colab\dados\Inalteraveis.xaml.cs">
       <DependentUpon>Inalteraveis.xaml</DependentUpon>
     </Compile>
-    <Compile Include="telas\colab\Ranking.xaml.cs">
+    <Compile Include="telas\colab\rank\Controles\topfuncionarios.xaml.cs">
+      <DependentUpon>topfuncionarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="telas\colab\rank\InfoColaborador.xaml.cs">
+      <DependentUpon>InfoColaborador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="telas\colab\rank\Ranking.xaml.cs">
       <DependentUpon>Ranking.xaml</DependentUpon>
     </Compile>
     <Compile Include="telas\main.xaml.cs">
@@ -199,7 +205,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="telas\colab\Ranking.xaml">
+    <Page Include="telas\colab\rank\Controles\topfuncionarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\rank\InfoColaborador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\rank\Ranking.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
