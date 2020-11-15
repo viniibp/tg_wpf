@@ -1,14 +1,14 @@
-﻿<Window x:Class="TG.telas.colab.main"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.main"
         mc:Ignorable="d"
         Title="main" Height="720.5" Width="1326.5" WindowStartupLocation="CenterScreen">
     <Grid HorizontalAlignment="Right" Width="1314" Margin="0,0,0,0">
         <Grid x:Name="menuGrid" Width="1080" Height="70" Margin="235,1,0,619"/>
-            <Frame x:Name="painel" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Width="1080" Height="620" VerticalAlignment="Bottom"/>
-        <Separator HorizontalAlignment="Left" Height="5" Margin="232,0,0,615" VerticalAlignment="Bottom" Width="1080"/>
+        <Frame x:Name="painel" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Width="1080" Height="620" VerticalAlignment="Bottom"/>
         <Separator HorizontalAlignment="Right" Height="4" Margin="-112,0,738,341" VerticalAlignment="Bottom" Width="688" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>

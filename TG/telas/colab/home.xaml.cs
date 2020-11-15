@@ -30,7 +30,6 @@ namespace TG.telas
             usuarioCorrente = u;
             InitializeComponent();
             usuarioCorrente = u;
-            teste.Content = usuarioCorrente.Username;
             Load();
         }
 
