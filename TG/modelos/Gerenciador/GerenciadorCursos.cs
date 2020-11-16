@@ -6,41 +6,55 @@ namespace TG.modelos.Gerenciador
     public class GerenciadorCursos
     {
         private List<Formacao> Cursos;
+        public int Pontuacao { get; set; }
+        public double Media { get; set; }
+        public int Validos { get; set; }
 
         public GerenciadorCursos(List<Formacao> cursos)
         {
             Cursos = cursos;
+            CalcPontuacao();
+            CalcularMedia_Validos();
         }
 
-        public int Pontuacao()
+        private void CalcPontuacao()
         {
             int pt = 0;
-            Cursos.ForEach(f => {
-                if (f.Valido)
+            if (Cursos != null)
+            {
+                Cursos.ForEach(f =>
                 {
-                    pt += f.Pontos;
-                }
-            });
-            return pt;
+                    if (f.Valido)
+                    {
+                        pt += f.Pontos;
+                    }
+                });
+            }
+            Pontuacao = pt;
         }
 
-        public (double, int) CalcularMedia_Validos()
+        private void CalcularMedia_Validos()
         {
             int somaPesos = 0, validos = 0;
-            Cursos.ForEach(f => {
-                if (f.Valido)
+            double mediaPeso = 0;
+            if (Cursos != null)
+            {
+                Cursos.ForEach(f =>
                 {
-                    somaPesos += f.Peso;
-                    validos++;
-                }
-            });
-            double mediaPeso;
-            if (somaPesos == 0 || validos == 0) mediaPeso = 0;
-            else mediaPeso = (somaPesos / validos);
-            return (mediaPeso, validos);
+                    if (f.Valido)
+                    {
+                        somaPesos += f.Peso;
+                        validos++;
+                    }
+                });
+                if (somaPesos == 0 || validos == 0) mediaPeso = 0;
+                else mediaPeso = (somaPesos / validos);
+            }
+            Media = mediaPeso;
+            Validos = validos;
         }
 
-        public int TotalCursos() => Cursos.Count;
+        public int TotalCursos() => Cursos != null ? Cursos.Count : 0;
 
         public Nivel Nivel(ProgressBar pb, int xp)
         {
@@ -48,6 +62,12 @@ namespace TG.modelos.Gerenciador
             pb.Minimum = lvl.Min;
             pb.Maximum = lvl.Max;
             pb.Value = xp;
+            return lvl;
+        }
+
+        public int Nivel(int xp)
+        {
+            int lvl = new Nivel(xp).Level;
             return lvl;
         }
 

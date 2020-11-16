@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TG.modelos;
+using TG.modelos.Gerenciador;
 
 namespace TG.telas.colab.rank
 {
@@ -21,16 +22,19 @@ namespace TG.telas.colab.rank
     /// </summary>
     public partial class InfoColaborador : Page
     {
+
         public InfoColaborador()
         {
             InitializeComponent();
         }
-       public void Carregardadosinfo(string nome)
+
+        public void Carregardadosinfo(Colaborador c)
         {
-            colocacao.Content = 1;
-            nivel.Content = 21;
-            nCursos.Content = 6;
-            nomeUsuario.Content = nome;
+            GerenciadorCursos gc = new GerenciadorCursos(c.Formacoes);
+            colocacao.Text = c.Ranking().ToString();
+            nivel.Text = gc.Nivel(gc.Pontuacao).ToString();
+            nCursos.Text = gc.TotalCursos().ToString();
+            nome.Content = c.Nome;
         }
     }
 }

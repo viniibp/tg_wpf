@@ -16,20 +16,20 @@ namespace TG
         {
 
             InitializeComponent();
-            nomeUsuario.Text = "admin";
+            nomeUsuario.Text = "prog";
             senha.Password = "123";
             //Qualquercoisa();
+
             
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
-            Hide();
-            LimparCampos();
             usuario.Entrar();
             //Maiscoisa();
-            System.Console.WriteLine(Session.GetColaborador().Nome);
+            Hide();
+            LimparCampos();
             new main().ShowDialog();
             Show();
             nomeUsuario.Focus();
@@ -40,53 +40,53 @@ namespace TG
             Formacao f = new Formacao
             {
                 Id = ObjectId.GenerateNewId(),
-                NomeCurso = "Nome Curso",
-                TipoCurso = "Curso de Extensão",
-                AreaCurso = "Sei lá",
-                CargaHoraria = "80",
+                NomeCurso = "Curso 3",
+                TipoCurso = "Curso de Teste",
+                AreaCurso = "TI",
+                CargaHoraria = "20",
                 DataInicio = new DateTime(2018, 01, 01),
                 DataTermino = new DateTime(2018, 10, 01),
-                Valido = false,
-                Peso = 0,
-                Pontos = 0
+                Valido = true,
+                Peso = 5,
+                Pontos = 20
             };
             Session.GetColaborador().AdicionarCurso(f);
          }
         public void Qualquercoisa()
         {
-            var carteiratrabalho = new modelos.Documentacao.CarteiraTrabalho("4002", "8922");
+            var carteiratrabalho = new modelos.Documentacao.CarteiraTrabalho("2222", "0222");
 
             var documentos = new modelos.Documentacao.Documentos
             {
-                CPF = "449.550.477-10",
-                RG = "00.000.008-8",
-                CarteiraTrabalho = carteiratrabalho
+                CPF = "222.222.222-22",
+                RG = "11.111.111-1",
+                CarteiraTrabalho = carteiratrabalho,
             };
 
             var dt = new modelos.Documentacao.DadosTrabalhistas
             {
-                Registro = "00000-00",
-                Cargo = "gerente",
-                Setor = "rh",
+                Registro = "222222-2",
+                Cargo = "programador",
+                Setor = "TI",
                 DataAdmissao = DateTime.Today,
                 JornadaTrabalho = 8,
-                Salario = 1_045.00f,
+                Salario = 2_050.00f,
             };
 
             var dp = new modelos.Documentacao.DadosPessoais
             {
                 DataNascimento = new DateTime(2000, 10, 13),
-                EstadoCivil = "online",
-                Genero = "batman",
-                Sexo = "masculino",
-                Idade = 19,
-                QtdFilhos = 0
+                EstadoCivil = "Solteiro",
+                Genero = "n sei",
+                Sexo = "Feminino",
+                Idade = 23,
+                QtdFilhos = 2
             };
 
             var police = new Colaborador
             {
-                Nome = "vinicius batista",
-                Username = "admin",
+                Nome = "Iuri Paz",
+                Username = "prog",
                 Senha = new MD5Hash().GetMd5Hash("123"),
                 AtivoContratado = true,
                 Documentos = documentos,

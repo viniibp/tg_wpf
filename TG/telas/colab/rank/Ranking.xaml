@@ -9,10 +9,10 @@
       Title="Ranking">
 
     <Grid>
-        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="600" Width="734" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10,346,10">
+        <ScrollViewer Background="GhostWhite" x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="600" Width="734" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10,346,10">
             <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ElementName=Scroll, Path=ViewportHeight}"/>
         </ScrollViewer>
-        <Frame x:Name="infoColaborador" HorizontalAlignment="Left" Height="600" Margin="745,10,0,0" VerticalAlignment="Top" Width="325"/>
+        <Frame Background="WhiteSmoke" x:Name="infoColaborador" HorizontalAlignment="Left" Height="600" Margin="745,10,0,0" VerticalAlignment="Top" Width="325"/>
 
     </Grid>
 

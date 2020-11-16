@@ -32,16 +32,18 @@ namespace TG.telas.colab
         private void Carregar(Colaborador c)
         {
             var manager = c.GerenciadorCursos();
-            var (media, validos) = manager.CalcularMedia_Validos();
-            var pontos = manager.Pontuacao();
+            var media = manager.Media;
+            int validos = manager.Validos;
+            var pontos = manager.Pontuacao;
 
             qtdCursos.Content = manager.TotalCursos().ToString();
             mediaPesos.Value = int.Parse(media.ToString());
-           // .Text = media.ToString();
+            // .Text = media.ToString();
             pontosTotais.Content = pontos.ToString();
             qtdValidos.Content = validos.ToString();
 
             ranking.Content = c.Ranking().ToString();
+            
         }
 
         private void listarCursos(List<Formacao> formacoes)

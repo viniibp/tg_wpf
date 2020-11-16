@@ -7,11 +7,13 @@
              mc:Ignorable="d" Height="270" Width="200" Background="White" BorderBrush="Black" Margin="10">
 
     <Grid>
-        <Border Background="GhostWhite" BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+        <Border x:Name="bg"  Background="GhostWhite" BorderBrush="Black" BorderThickness="1" CornerRadius="10">
             <Grid >
-                <Label x:Name="nomeUsuario" Content="Usuario" Width="50" Height="25" Margin="76,191,72,52" />
+                <Label x:Name="nomeColab" Content="Usuario" Height="25" Margin="20,191,18,52" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
                 <Button Content="Mais" Width="100" Height="25" Margin="44,233,54,10" Click="Button_Click"/>
-                <Viewbox Margin="10,10,10,94" />
+                <Viewbox Margin="10,10,10,94">
+                    <Image Source="/TG;component/Assets/user_placeholder.png"/>
+                </Viewbox>
             </Grid>
         </Border>
 

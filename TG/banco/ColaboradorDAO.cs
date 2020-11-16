@@ -31,9 +31,9 @@ namespace TG.banco
             return funcionario;
         }
 
-        public void Create(Colaborador colab) => collection.InsertOne(colab);
+        public List<Colaborador> ListRanking() => FindAll().OrderBy(c => c.Ranking()).ToList();
 
-        public Colaborador Findk() => collection.Find(c => true).First();
+        public void Create(Colaborador colab) => collection.InsertOne(colab);
 
         public Colaborador Find(Colaborador colab) => collection.Find(c =>  c.Nome.Contains(colab.Nome)).First();
 
@@ -44,7 +44,7 @@ namespace TG.banco
         public List<Colaborador> FindAll() => collection.Find(_ => true).ToList();
 
         public int Ranking(ObjectId id) =>
-            FindAll().OrderBy(f => f.GerenciadorCursos().Pontuacao()).ToList().FindIndex(c => c.Id == id);
+            FindAll().OrderByDescending(f => f.GerenciadorCursos().Pontuacao).ToList().FindIndex(c => c.Id == id);
 
     }
 }

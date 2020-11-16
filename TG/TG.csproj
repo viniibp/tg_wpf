@@ -155,6 +155,12 @@
     <Compile Include="telas\colab\dados\Inalteraveis.xaml.cs">
       <DependentUpon>Inalteraveis.xaml</DependentUpon>
     </Compile>
+    <Compile Include="telas\colab\dados\Telefone\Telefone.xaml.cs">
+      <DependentUpon>Telefone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="telas\colab\home_controls\top4.xaml.cs">
+      <DependentUpon>top4.xaml</DependentUpon>
+    </Compile>
     <Compile Include="telas\colab\rank\Controles\topfuncionarios.xaml.cs">
       <DependentUpon>topfuncionarios.xaml</DependentUpon>
     </Compile>
@@ -202,6 +208,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="telas\colab\dados\Inalteraveis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\dados\Telefone\Telefone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="telas\colab\home_controls\top4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -267,7 +281,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imagens\user_placeholder.png" />
+    <Resource Include="Assets\user_placeholder.png" />
     <Resource Include="Assets\Boi.png" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />

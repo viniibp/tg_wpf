@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TG.modelos;
 
 namespace TG.telas.colab.rank.Controles
 {
@@ -21,22 +22,28 @@ namespace TG.telas.colab.rank.Controles
     public partial class topfuncionarios : UserControl
     {
         private InfoColaborador colab;
-        private string nome;
+        private Colaborador colaborador;
+
+        public topfuncionarios(Colaborador c)
+        {
+            InitializeComponent();
+            colaborador = c;
+            nomeColab.Content = colaborador.Nome;
+        }
 
         public void Setcolab(InfoColaborador c)
         {
             colab = c;
         }
-        public topfuncionarios(string teste)
-        {
-            InitializeComponent();
-            nome = teste;
-            nomeUsuario.Content = teste;
 
+        public void MySelf()
+        {
+            bg.Background = Brushes.LightBlue;
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            colab.Carregardadosinfo(nome);
+            colab.Carregardadosinfo(colaborador);
         }
     }
 }

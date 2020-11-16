@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TG.banco;
 using TG.telas.colab.rank.Controles;
 
 namespace TG.telas.colab.rank
@@ -27,20 +28,22 @@ namespace TG.telas.colab.rank
             InfoColaborador infoColab = new InfoColaborador();
             Load(infoColab);
             infoColaborador.Content = infoColab;
+            infoColab.Carregardadosinfo(Session.GetColaborador());
         }
+
         public void Load(InfoColaborador colaborador)
         {
-            List<string> dados = new List<string> { "string", "botato", "ynhasuo", "string", "botato", "ynhasuo", "string", "botato", "ynhasuo" };
-            foreach (var dado in dados)
+            var todosColab = new ColaboradorDAO().ListRanking();
+            var Id = Session.GetColaborador().Id;
+
+            foreach (var colab in todosColab)
             {
-               
-                topfuncionarios topFuncionarios = new topfuncionarios(dado);
+                topfuncionarios topFuncionarios = new topfuncionarios(colab);
                 topFuncionarios.Setcolab(colaborador);
+                if (colab.Id == Id) topFuncionarios.MySelf();
                 painel.Children.Add(topFuncionarios);
 
             }
         }
-
-        
     }
 }

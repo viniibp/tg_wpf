@@ -10,23 +10,51 @@
       Title="DadosAlteraveis">
 
     <Grid Background="White">
-        <Button Content="Salvar" HorizontalAlignment="Left" Margin="957,492,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" RenderTransformOrigin="0.08,0.359"/>
-        <Label Content="Nome:" HorizontalAlignment="Left" Margin="32,60,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="35,126,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="-7.802,-0.933"/>
-        <Label Content="CPF:" HorizontalAlignment="Left" Margin="32,188,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <Label Content="Titulo de Eleitor:" HorizontalAlignment="Left" Margin="556,70,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="-4.824,8.667"/>
-        <Label Content="RG:" HorizontalAlignment="Left" Margin="35,255,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="457,216,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.373,-1.317"/>
-        <TextBox x:Name="nomeUsuario" HorizontalAlignment="Left" Height="30" Margin="115,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <TextBox x:Name="email" HorizontalAlignment="Left" Height="30" Margin="115,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <TextBlock x:Name="cpf" Margin="115,188,725,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="452,256,309,42">
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="32,60,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" FontWeight="Bold"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="35,126,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="-7.802,-0.933" FontWeight="Bold"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="51,186,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Titulo de Eleitor:" HorizontalAlignment="Left" Margin="562,89,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="-4.824,8.667" FontWeight="Bold"/>
+        <Label Content="RG:" HorizontalAlignment="Left" Margin="55,255,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="561,215,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.373,-1.317" FontWeight="Bold" Width="84"/>
+        <TextBox x:Name="nome" HorizontalAlignment="Left" Height="30" Margin="115,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18" Text="---------------------"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="30" Margin="115,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18" Text="---------------------"/>
+        <TextBlock x:Name="cpf" Margin="117,194,723,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"><Span Foreground="#FFA31515" FontSize="12.6666666666667" FontFamily="Consolas"><Run Text="---------------------"/></Span></TextBlock>
+        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="559,254,202,44">
             <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="240" Width="292" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="3,-1,0,-1" >
                 <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ViewportHeight, ElementName=Scroll}"/>
             </ScrollViewer>
         </Border>
-        <TextBlock x:Name="rg" Margin="115,257,725,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <TextBlock x:Name="tituloEleitor" Margin="718,70,122,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-
+        <TextBlock x:Name="rg" Margin="115,263,725,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"><Span Foreground="#FFA31515" FontSize="12.6666666666667" FontFamily="Consolas"><Run Text="---------------------"/></Span></TextBlock>
+        <TextBlock x:Name="tituloEleitor" Margin="711,96,129,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"><Span Foreground="#FFA31515" FontSize="12.6666666666667" FontFamily="Consolas"><Run Text="---------------------"/></Span></TextBlock>
+        <TextBox x:Name="newTelefone" HorizontalAlignment="Left" Height="30" Margin="653,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Button HorizontalAlignment="Left" Margin="802,215,0,0" VerticalAlignment="Top" Width="48" Click="Button_Click_1">
+            <materialDesign:PackIcon Kind="Plus"/>
+        </Button>
+        <materialDesign:DialogHost x:Name="dr" BorderBrush="{DynamicResource MaterialDesignDivider}">
+            <Button HorizontalAlignment="Left" Margin="924,490,0,0" VerticalAlignment="Top" Width="108" Height="34" Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="ContentSaveEdit"  Width="31" Height="26"/>
+                    <Label Content="Salvar" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <materialDesign:DialogHost.DialogContent>
+                <Grid Width="300" Height="150" HorizontalAlignment="Center">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Folder" Foreground="{StaticResource PrimaryHueMidBrush}" Width="50" Height="50"/>
+                        <TextBlock Foreground="DarkGray" Width="200" Margin="15 5" TextWrapping="Wrap">
+                            Deseja confirmar as alterações?
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15">
+                        <Button Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center">
+                            Recusar
+                        </Button>
+                        <Button Click="Save" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center">
+                            Aceitar
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
     </Grid>
 </Page>
