@@ -23,24 +23,9 @@ namespace TG.telas
     /// </summary>
     public partial class home : Page
     {
-        protected static Usuario usuarioCorrente;
-
-        public home(Usuario u)
+        public home()
         {
-            usuarioCorrente = u;
             InitializeComponent();
-            usuarioCorrente = u;
-            Load();
-        }
-
-        private void Load()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                Curso c = new Curso();
-                painel.Children.Add(c);
-                c.Text(i.ToString());
-            }
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.main"
         mc:Ignorable="d"
-        Title="main" Height="720.5" Width="1326.5" WindowStartupLocation="CenterScreen">
+        Title="main" Height="720.5" Width="1326.5" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
     <Grid HorizontalAlignment="Right" Width="1317" Margin="0,0,0,0">
         <Grid x:Name="menuGrid" Width="1080" Height="70" Margin="235,1,0,619"/>
         <Frame x:Name="painel" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Width="1080" Height="620" VerticalAlignment="Bottom"/>

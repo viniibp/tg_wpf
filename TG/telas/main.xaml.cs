@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using TG.banco;
 using TG.modelos;
 using TG.telas.colab.home_controls;
@@ -18,7 +17,7 @@ namespace TG.telas.colab
         {
             InitializeComponent();
             new menu.Menu(container: menuGrid, painel: painel);
-            Abrir(new home(new Usuario()));
+            Abrir(new home());
             colaborador = Session.GetColaborador();
             nomeLogado.Content = colaborador.Nome;
             setor.Content = colaborador.DadosTrabalhistas[0].Setor;
@@ -52,7 +51,7 @@ namespace TG.telas.colab
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Abrir(new home(new Usuario()));
+            Abrir(new home());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -79,6 +78,11 @@ namespace TG.telas.colab
         {
             Session.CloseSession();
             Close();
+        }
+
+        private void Window_Closed(object sender, System.EventArgs e)
+        {
+            Session.CloseSession();
         }
     }
 }

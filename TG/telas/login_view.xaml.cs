@@ -16,7 +16,7 @@ namespace TG
         {
 
             InitializeComponent();
-            nomeUsuario.Text = "prog";
+            nomeUsuario.Text = "admin";
             senha.Password = "123";
             //Qualquercoisa();
 
@@ -27,7 +27,7 @@ namespace TG
         {
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
             usuario.Entrar();
-            //Maiscoisa();
+            Maiscoisa();
             Hide();
             LimparCampos();
             new main().ShowDialog();

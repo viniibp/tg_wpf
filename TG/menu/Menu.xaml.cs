@@ -29,7 +29,7 @@ namespace TG.menu
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Abrir(new home(new modelos.Usuario()), Pages.PaginaInicial);
+            Abrir(new home(), Pages.PaginaInicial);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
