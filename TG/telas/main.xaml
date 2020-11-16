@@ -30,7 +30,7 @@
                 <materialDesign:PackIcon Foreground="Red" Kind="Shutdown" Margin="24,6,-16,0" Height="26" Width="34"/>
             </Grid>
         </Button>
-        <Border BorderThickness="2" BorderBrush="Gray" HorizontalAlignment="Left" Height="200" Margin="6,430,0,0" VerticalAlignment="Top" Width="226">
+        <Border BorderThickness="2" CornerRadius="5" BorderBrush="Gray" HorizontalAlignment="Left" Height="200" Margin="6,430,0,0" VerticalAlignment="Top" Width="226">
             <WrapPanel x:Name="top4Painel" />
         </Border>
         <TextBlock Foreground="Gray" FontFamily="Champagne &amp; Limousines" FontSize="18" Background="White" HorizontalAlignment="Left" Margin="89,416,0,0" TextWrapping="Wrap" Text="Top 4" VerticalAlignment="Top" Width="50" FontWeight="Bold"/>
