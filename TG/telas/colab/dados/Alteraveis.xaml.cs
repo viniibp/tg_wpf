@@ -63,11 +63,13 @@ namespace TG.telas.colab.dados
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Colaborador f = Session.GetColaborador();
-
-            f.Contatos.AddTelefone(newTelefone.Text);
-            LoadTelefones(f.Contatos.Telefones);
-            newTelefone.Clear();
+            if (!newTelefone.Text.Equals(""))
+            {
+                Colaborador f = Session.GetColaborador();
+                f.Contatos.AddTelefone(newTelefone.Text);
+                LoadTelefones(f.Contatos.Telefones);
+                newTelefone.Clear();
+            }
         }
 
         private void Save(object sender, RoutedEventArgs e)
