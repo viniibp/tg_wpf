@@ -8,7 +8,7 @@
       Title="home" Height="620" Width="1080">
 
     <Grid Background="White">
-        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="539" Width="852" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="227,80,1,1">
+        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="600" Width="905" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="48,10,127,10">
             <WrapPanel x:Name="painel" MinWidth="250" MinHeight="{Binding ElementName=Scroll, Path=ViewportHeight}"/>
         </ScrollViewer>
 
