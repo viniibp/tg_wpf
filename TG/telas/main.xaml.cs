@@ -21,6 +21,7 @@ namespace TG.telas.colab
             Abrir(new home(new Usuario()));
             colaborador = Session.GetColaborador();
             nomeLogado.Content = colaborador.Nome;
+            setor.Content = colaborador.DadosTrabalhistas[0].Setor;
             LoadTop5();
             LoadInfos(colaborador.Formacoes);
         }

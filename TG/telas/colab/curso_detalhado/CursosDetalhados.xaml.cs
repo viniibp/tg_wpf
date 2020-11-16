@@ -38,20 +38,20 @@ namespace TG.telas.colab
 
             qtdCursos.Content = manager.TotalCursos().ToString();
             mediaPesos.Value = int.Parse(media.ToString());
-            // .Text = media.ToString();
             pontosTotais.Content = pontos.ToString();
             qtdValidos.Content = validos.ToString();
 
             ranking.Content = c.Ranking().ToString();
+            listarCursos(c.Formacoes);
             
         }
 
         private void listarCursos(List<Formacao> formacoes)
         {
-            formacoes.ForEach(f => PrepararCurso(f));
+            if(formacoes != null) formacoes.ForEach(f => PrepararCurso(f));
         }
 
-        private void PrepararCurso(Formacao f = null)
+        private void PrepararCurso(Formacao f)
         {
             CursoDetalhado cd = new CursoDetalhado(f);
             painel.Children.Add(cd);

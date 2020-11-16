@@ -5,12 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TG.telas.colab.home_controls"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.home_controls.Top4"
-             mc:Ignorable="d" d:DesignWidth="228" Height="40" Margin="0,5,0,5">
+             mc:Ignorable="d" Height="40" Margin="0,5,0,5" Width="222.327">
     <Grid>
-        <Border CornerRadius="10" BorderThickness="1">
-            <Grid Background="WhiteSmoke">
-                <Label FontFamily="Champagne &amp; Limousines" FontSize="10" x:Name="nome" Content="Nome da pessoa" HorizontalAlignment="Right" VerticalAlignment="Top" Width="216" Margin="0,2,7,0" FontWeight="Bold"/>
-                <materialDesign:RatingBar IsReadOnly="True" x:Name="mediaPesos" HorizontalAlignment="Left" Margin="105,14,0,0" VerticalAlignment="Top" Width="116" Height="22"/>
+        <Border Background="WhiteSmoke" CornerRadius="5" BorderThickness="1" x:Name="painel">
+            <Grid>
+                <Label FontFamily="Champagne &amp; Limousines" FontSize="13" x:Name="nome" Content="Nome da pessoa" HorizontalAlignment="Right" VerticalAlignment="Top" Width="216" Margin="0,1,2,0" FontWeight="Bold"/>
+                <materialDesign:RatingBar IsReadOnly="True" x:Name="mediaPesos" HorizontalAlignment="Left" Margin="102,14,0,0" VerticalAlignment="Top" Width="116" Height="22"/>
+                <materialDesign:PackIcon Foreground="CadetBlue" Kind="TrophyAward" Margin="7,19,0,0"/>
             </Grid>
         </Border>
     </Grid>

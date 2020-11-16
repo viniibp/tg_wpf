@@ -6,10 +6,10 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.main"
         mc:Ignorable="d"
         Title="main" Height="720.5" Width="1326.5" WindowStartupLocation="CenterScreen">
-    <Grid HorizontalAlignment="Right" Width="1314" Margin="0,0,0,0">
+    <Grid HorizontalAlignment="Right" Width="1317" Margin="0,0,0,0">
         <Grid x:Name="menuGrid" Width="1080" Height="70" Margin="235,1,0,619"/>
         <Frame x:Name="painel" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Width="1080" Height="620" VerticalAlignment="Bottom"/>
-        <Separator HorizontalAlignment="Left" Height="5" Margin="232,0,0,615" VerticalAlignment="Bottom" Width="1080"/>
+        <Separator HorizontalAlignment="Left" Height="5" Margin="235,0,0,615" VerticalAlignment="Bottom" Width="1082"/>
         <Separator HorizontalAlignment="Right" Height="4" Margin="-112,0,738,341" VerticalAlignment="Bottom" Width="688" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>
@@ -19,17 +19,23 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <Viewbox Margin="25,40,0,0" HorizontalAlignment="Left" Height="181"  VerticalAlignment="Top" Width="182">
-            <Image x:Name="fotoPerfil" Height="94" Width="95" Source="/TG;component/assets/user_placeholder.png"/>
-        </Viewbox>
-        <ProgressBar x:Name="nivel" HorizontalAlignment="Left" Height="16" Margin="64,263,0,0" VerticalAlignment="Top" Width="151"/>
-        <Label FontFamily="Champagne &amp; Limousines" Content="Nivel" x:Name="Nivel" HorizontalAlignment="Left" Margin="11,261,0,0" VerticalAlignment="Top" Width="50" FontWeight="Bold"/>
-        <Button Content="{materialDesign:PackIcon Kind=Shutdown}" HorizontalAlignment="Left" Margin="0,648,0,0" VerticalAlignment="Top" Width="231" Height="40" Click="Button_Click_4"/>
-        <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="2" HorizontalAlignment="Left" Height="200" Margin="2,430,0,0" VerticalAlignment="Top" Width="228">
+        <Border BorderThickness="1" BorderBrush="Gray" Margin="25,40,0,0" HorizontalAlignment="Left" Height="181"  VerticalAlignment="Top" Width="181">
+            <Image x:Name="fotoPerfil" Source="/TG;component/assets/user_placeholder.png" Margin="0,1,1,0"/>
+        </Border>
+        <ProgressBar x:Name="nivel" HorizontalAlignment="Left" Height="16" Margin="12,372,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label FontSize="16" FontFamily="Champagne &amp; Limousines" Content="Nivel" x:Name="Nivel" HorizontalAlignment="Left" Margin="10,342,0,0" VerticalAlignment="Top" Width="221" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Button HorizontalAlignment="Left" Margin="5,637,0,4" Width="227" Height="Auto" Click="Button_Click_4">
+            <Grid>
+                <Label Foreground="White" Content="Sair" Margin="-14,-1,14,1" FontSize="18"/>
+                <materialDesign:PackIcon Foreground="Red" Kind="Shutdown" Margin="24,6,-16,0" Height="26" Width="34"/>
+            </Grid>
+        </Button>
+        <Border BorderThickness="2" CornerRadius="5" BorderBrush="Gray" HorizontalAlignment="Left" Height="200" Margin="6,430,0,0" VerticalAlignment="Top" Width="226">
             <WrapPanel x:Name="top4Painel" />
         </Border>
-        <TextBlock FontFamily="Champagne &amp; Limousines" FontSize="18" Background="White" HorizontalAlignment="Left" Margin="87,416,0,0" TextWrapping="Wrap" Text="Top 4" VerticalAlignment="Top" Width="50" FontWeight="Bold"/>
-        <Label HorizontalAlignment="Center" x:Name="nomeLogado" FontFamily="Champagne &amp; Limousines" FontSize="18" Background="White" Margin="5,227,1091,0" Content="Nome do usuario logado" VerticalAlignment="Top" Width="218" FontWeight="Bold" Height="30" HorizontalContentAlignment="Center"/>
+        <TextBlock Foreground="Gray" FontFamily="Champagne &amp; Limousines" FontSize="18" Background="White" HorizontalAlignment="Left" Margin="89,416,0,0" TextWrapping="Wrap" Text="Top 4" VerticalAlignment="Top" Width="50" FontWeight="Bold"/>
+        <Label HorizontalAlignment="Center" x:Name="nomeLogado" FontFamily="Champagne &amp; Limousines" FontSize="18" Background="White" Margin="6,234,1093,0" Content="Nome do usuario logado" VerticalAlignment="Top" Width="218" FontWeight="Bold" Height="30" HorizontalContentAlignment="Center"/>
+        <Label HorizontalAlignment="Center" x:Name="setor" FontFamily="Champagne &amp; Limousines" FontSize="18" Background="White" Margin="9,288,1090,0" Content="Setor" VerticalAlignment="Top" Width="218" FontWeight="Bold" Height="30" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

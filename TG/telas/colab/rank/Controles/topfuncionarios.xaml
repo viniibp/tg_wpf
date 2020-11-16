@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:TG.telas.colab.rank.Controles"
-             mc:Ignorable="d" Height="270" Width="200" Background="White" BorderBrush="Black" Margin="10">
+             mc:Ignorable="d" Height="270" Width="200" Background="Transparent" BorderBrush="Black" Margin="10">
 
     <Grid>
         <Border x:Name="bg"  Background="GhostWhite" BorderBrush="Black" BorderThickness="1" CornerRadius="10">
@@ -14,6 +15,7 @@
                 <Viewbox Margin="10,10,10,94">
                     <Image Source="/TG;component/Assets/user_placeholder.png"/>
                 </Viewbox>
+                <materialDesign:PackIcon x:Name="icon" Foreground="DarkBlue" Kind="None" Margin="149,221,0,0" Height="40" Width="43" ToolTip="Você!"/>
             </Grid>
         </Border>
 

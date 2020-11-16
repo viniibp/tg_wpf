@@ -34,7 +34,12 @@
                     </StackPanel>
                 </Grid>
                 <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,100,68" Content="LOGIN" Click="Button_Click"/>
-                <Button Width="48" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="157,0,145,3" Content="{materialDesign:PackIcon Kind=Close}" Click="Fechar" Height="29"/>
+                <Button Width="82" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="133,0,133,14" Click="Fechar" Height="29">
+                    <Grid>
+                        <Label Foreground="white" Content="Fechar" Height="23" Margin="-9,-2,9,0"/>
+                        <materialDesign:PackIcon Foreground="Red" Kind="Close" Height="18" Width="22" RenderTransformOrigin="0.636,0.972" Margin="37,4,-9,-1"/>
+                    </Grid>
+                </Button>
                 <materialDesign:PackIcon Kind="User" Foreground="DarkGray" HorizontalAlignment="Left" Margin="60,255,0,0" VerticalAlignment="Top" Height="38" Width="20"/>
                 <materialDesign:PackIcon Kind="Key" Foreground="DarkGray" HorizontalAlignment="Left" Margin="60,321,0,0" VerticalAlignment="Top" Height="38"  Width="20"/>
 

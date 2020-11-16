@@ -35,6 +35,7 @@ namespace TG.telas.colab.rank
             nivel.Text = gc.Nivel(gc.Pontuacao).ToString();
             nCursos.Text = gc.TotalCursos().ToString();
             nome.Content = c.Nome;
+            mediaPeso.Value = int.Parse(gc.Media.ToString());
         }
     }
 }
