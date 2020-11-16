@@ -39,6 +39,7 @@ namespace TG.telas.colab.rank.Controles
         public void MySelf()
         {
             bg.Background = Brushes.LightBlue;
+            icon.Kind = MaterialDesignThemes.Wpf.PackIconKind.Award;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

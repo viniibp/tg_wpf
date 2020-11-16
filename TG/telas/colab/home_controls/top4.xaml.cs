@@ -18,7 +18,7 @@ namespace TG.telas.colab.home_controls
 
         public void MySelf()
         {
-            Background = Brushes.LightBlue;
+            painel.Background = Brushes.LightBlue;
         }
     }
 }

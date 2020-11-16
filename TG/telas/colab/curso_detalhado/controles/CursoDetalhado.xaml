@@ -5,29 +5,33 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TG.telas.colab.curso_detalhado.controles"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="TG.telas.colab.curso_detalhado.controles.CursoDetalhado"
-             mc:Ignorable="d" Width="1054.421" Height="114">
-    <Grid Margin="0,0,1,10">
-        <Rectangle Height="96"  VerticalAlignment="Bottom"  RadiusY="10" RadiusX="10" Margin="8,0,0,0" HorizontalAlignment="Left" Width="1011">
+             mc:Ignorable="d" Width="520" Height="283.5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="97*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Height="273"  VerticalAlignment="Bottom"  RadiusY="10" RadiusX="10" Margin="8,0,0,0" HorizontalAlignment="Left" Width="510" Grid.RowSpan="2">
             <Rectangle.Effect>
                 <DropShadowEffect Color="Gray"/>
             </Rectangle.Effect>
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                    <GradientStop Color="#FF6448FE" Offset="0.3"/>
-                    <GradientStop Color="#FF5FC6FF" Offset="1"/>
+                    <GradientStop x:Name="init" Color="#FF6448FE" Offset="0.3"/>
+                    <GradientStop x:Name="end" Color="#FF5FC6FF" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock x:Name="nomeCurso" HorizontalAlignment="Right" Margin="0,19,857,0" TextWrapping="Wrap" Text="Nome completo" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Width="153" Foreground="White" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,62,871,0" TextWrapping="Wrap" Text="Carga horária" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock x:Name="cargaHoraria" HorizontalAlignment="Right" Margin="0,62,856,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" RenderTransformOrigin="-0.727,0.632" Foreground="White" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,19,549,0" TextWrapping="Wrap" Text="Pontos" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock x:Name="pontos" HorizontalAlignment="Right" Margin="0,19,534,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,62,548,0" TextWrapping="Wrap" Text="Peso" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock x:Name="peso" HorizontalAlignment="Right" Margin="0,62,533,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,19,184,0" TextWrapping="Wrap" Text="Data início:" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock x:Name="dataInicio" HorizontalAlignment="Right" Margin="0,19,78,0" TextWrapping="Wrap" Text="00/00/0000" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,62,185,0" TextWrapping="Wrap" Text="Data término:" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
-        <TextBlock x:Name="dataTermino" HorizontalAlignment="Right" Margin="0,62,79,0" TextWrapping="Wrap" Text="00/00/0000" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="nomeCurso" HorizontalAlignment="Right" Margin="0,30,10,0"  Content="Nome completo" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Width="499" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,84,338,-79" TextWrapping="Wrap" Text="Carga horária" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBlock x:Name="cargaHoraria" Margin="189,84,255,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" RenderTransformOrigin="-0.727,0.632" Foreground="White" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,19,144,0" TextWrapping="Wrap" Text="Pontos" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock x:Name="pontos" Margin="387,19,83,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,89,162,0" TextWrapping="Wrap" Text="Peso" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock Margin="46,57,346,0" TextWrapping="Wrap" Text="Data início:" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock x:Name="dataInicio" Margin="169,57,231,0" TextWrapping="Wrap" Text="00/00/0000" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,128,341,-213" TextWrapping="Wrap" Text="Data término:" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock x:Name="dataTermino" Margin="186,128,217,0" TextWrapping="Wrap" Text="00/00/0000" VerticalAlignment="Top" FontSize="22" FontFamily="Times New Roman" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <materialDesign:RatingBar x:Name="peso" Foreground="Yellow" HorizontalAlignment="Left" Margin="363,91,0,0" VerticalAlignment="Top" Grid.Row="1"/>
     </Grid>
 </UserControl>

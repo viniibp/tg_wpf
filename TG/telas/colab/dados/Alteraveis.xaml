@@ -40,7 +40,7 @@
             <materialDesign:DialogHost.DialogContent>
                 <Grid Width="300" Height="150" HorizontalAlignment="Center">
                     <StackPanel>
-                        <materialDesign:PackIcon Kind="Folder" Foreground="{StaticResource PrimaryHueMidBrush}" Width="50" Height="50"/>
+                        <materialDesign:PackIcon Kind="ContentSaveAlert" Foreground="{StaticResource PrimaryHueMidBrush}" Width="50" Height="50"/>
                         <TextBlock Foreground="DarkGray" Width="200" Margin="15 5" TextWrapping="Wrap">
                             Deseja confirmar as alterações?
                         </TextBlock>
