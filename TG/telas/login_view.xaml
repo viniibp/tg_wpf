@@ -20,7 +20,7 @@
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                 </Rectangle>
-                <Image Width="100" Height="100" VerticalAlignment="Top" Margin="126,24,124,0" Source="/TG;component/Assets/Boi.png"/>
+                <Image Width="100" Height="100" VerticalAlignment="Top" Margin="126,24,124,0" Source="/TG;component/Assets/LogoTG.png"/>
                 <Rectangle Width="280" Height="240" Fill="White" VerticalAlignment="Bottom" Margin="32,0,32,80" RadiusY="10" RadiusX="10" Grid.ColumnSpan="4">
                     <Rectangle.Effect>
                         <DropShadowEffect Color="Gray"/>
