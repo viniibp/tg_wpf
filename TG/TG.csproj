@@ -282,7 +282,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\user_placeholder.png" />
-    <Resource Include="Assets\Boi.png" />
+    <Resource Include="Assets\LogoTG.png" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
