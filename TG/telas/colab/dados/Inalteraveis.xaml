@@ -28,7 +28,7 @@
         <TextBlock x:Name="naturalidade" Margin="300,470,540,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
         <TextBlock x:Name="salario" Margin="732,200,131,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
         <TextBlock x:Name="registro" Margin="737,327,103,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20"/>
-        <materialDesign:PackIcon x:Name="icon" Kind="Visibility" HorizontalAlignment="Left" Margin="939,206,0,0" VerticalAlignment="Top" Foreground="DarkGray" Background="White"/>
+        <materialDesign:PackIcon x:Name="icon" Kind="Visibility" HorizontalAlignment="Left" Margin="939,204,0,0" VerticalAlignment="Top" Foreground="DarkGray" Background="White"/>
 
     </Grid>
 </Page>

@@ -29,9 +29,9 @@
             <ComboBoxItem Content="Tecnico" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             <ComboBoxItem Content="Certificação Externa" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
         </ComboBox>
-        <TextBox x:Name="tempoDuracao" HorizontalAlignment="Left" Height="30" Margin="286,279,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <TextBox x:Name="areaCurso" HorizontalAlignment="Left" Height="30" Margin="286,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-        <TextBox x:Name="nomeCurso" HorizontalAlignment="Left" Height="30" Margin="286,360,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBox x:Name="tempoDuracao" HorizontalAlignment="Left" Height="30" Margin="286,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBox x:Name="areaCurso" HorizontalAlignment="Left" Height="30" Margin="286,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <TextBox x:Name="nomeCurso" HorizontalAlignment="Left" Height="30" Margin="286,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
         <DatePicker x:Name="dataInicio" HorizontalAlignment="Left" Margin="834,139,0,0" VerticalAlignment="Top" Width="194" Height="30"/>
         <DatePicker x:Name="dataConclusao" HorizontalAlignment="Left" Margin="834,209,0,0" VerticalAlignment="Top" Width="194" Height="30"/>
         <Button Content="Salvar" HorizontalAlignment="Left" Margin="962,578,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.58,1.109" Click="Button_Click"/>

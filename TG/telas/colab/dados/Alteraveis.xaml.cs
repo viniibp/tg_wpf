@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TG.modelos;
 
 namespace TG.telas.colab.dados
 {
@@ -23,6 +25,19 @@ namespace TG.telas.colab.dados
         public Alteraveis()
         {
             InitializeComponent();
+            Colaborador c = Session.GetColaborador();
+            LoadTelefones(c.Contatos.Telefones);
+            
+        }
+
+        private void LoadTelefones(List<string> telefones)
+        {
+            painel.Children.Clear();
+            foreach (var telefone in telefones)
+            {
+                Chip chip = new Chip() { Content = telefone, Margin = new Thickness(10), };
+                painel.Children.Add(chip);
+            }
         }
     }
 }
