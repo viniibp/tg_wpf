@@ -44,23 +44,23 @@ namespace TG.telas.colab.home_controls.banners
         private void Banner1(Banner banner)
         {
             nome1.Content = banner.Nome;
-            img1.Source = ImageSource(banner.URL);
+            img1.ImageSource = ImageSource(banner.URL);
         }
 
         private void Banner2(Banner banner)
         {
-            img2.Source = ImageSource(banner.URL);
+            img2.ImageSource = ImageSource(banner.URL);
         }
 
         private void Banner3(Banner banner)
         {
-            img3.Source = ImageSource(banner.URL);
+            img3.ImageSource = ImageSource(banner.URL);
         }
 
         private void Banner4(Banner banner)
         {
             nome4.Content = banner.Nome;
-            img4.Source = ImageSource(banner.URL);
+            img4.ImageSource = ImageSource(banner.URL);
         }
 
         private BitmapImage ImageSource(string url) => ImageHelper.ImagemUrl(url);

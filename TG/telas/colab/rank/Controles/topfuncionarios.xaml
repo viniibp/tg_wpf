@@ -12,9 +12,12 @@
             <Grid >
                 <Label x:Name="nomeColab" Content="Usuario" Height="25" Margin="20,191,18,52" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
                 <Button Content="Mais" Width="100" Height="25" Margin="44,233,54,10" Click="Button_Click"/>
-                <Viewbox Margin="10,10,10,94">
-                    <Image Source="/TG;component/Assets/user_placeholder.png"/>
-                </Viewbox>
+                
+                <Border CornerRadius="20" Margin="20,10,20,94">
+                    <Border.Background>
+                        <ImageBrush x:Name="fotoPerfil" ImageSource="/TG;component/Assets/user_placeholder.png" Stretch="Fill"/>
+                    </Border.Background>
+                </Border>
                 <materialDesign:PackIcon x:Name="icon" Foreground="DarkBlue" Kind="None" Margin="149,221,0,0" Height="40" Width="43" ToolTip="Você!"/>
             </Grid>
         </Border>

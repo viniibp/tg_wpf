@@ -21,8 +21,10 @@
                 <TextBlock x:Name="nivel" HorizontalAlignment="Left" Margin="93,444,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"  FontFamily="Champagne &amp; Limousines" FontSize="20" FontWeight="Bold"/>
                 <TextBlock x:Name="nCursos" HorizontalAlignment="Left" Margin="186,525,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"  FontFamily="Champagne &amp; Limousines" FontSize="20" FontWeight="Bold"/>
                 <Label Content="Media:" HorizontalAlignment="Left" Margin="25,271,0,0" VerticalAlignment="Top" FontFamily="Champagne &amp; Limousines" FontSize="20" FontWeight="Bold"/>
-                <Border  Margin="83,22,0,404" BorderThickness="1" BorderBrush="Gray" HorizontalAlignment="Left" Width="135">
-                    <Image Source="/TG;component/assets/user_placeholder.png" HorizontalAlignment="Left" Height="133" VerticalAlignment="Top" Width="133"/>
+                <Border CornerRadius="35" Margin="83,22,0,404" BorderThickness="1" BorderBrush="Gray" HorizontalAlignment="Left" Width="135">
+                    <Border.Background>
+                        <ImageBrush x:Name="fotoPerfil" ImageSource="/TG;component/assets/user_placeholder.png" Stretch="Fill"/>
+                    </Border.Background>
                 </Border>
             </Grid>
         </Border>

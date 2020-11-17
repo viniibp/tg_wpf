@@ -19,8 +19,10 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <Border BorderThickness="1" BorderBrush="Gray" Margin="25,40,0,0" HorizontalAlignment="Left" Height="181"  VerticalAlignment="Top" Width="181">
-            <Image x:Name="fotoPerfil" Source="/TG;component/assets/user_placeholder.png" Margin="0,1,1,0"/>
+        <Border CornerRadius="30" BorderThickness="1" BorderBrush="Gray" Margin="25,40,0,0" HorizontalAlignment="Left" Height="181"  VerticalAlignment="Top" Width="181">
+            <Border.Background>
+                <ImageBrush x:Name="fotoPerfil" ImageSource="/TG;component/assets/user_placeholder.png" Stretch="Fill"/>
+            </Border.Background>
         </Border>
         <ProgressBar x:Name="nivel" HorizontalAlignment="Left" Height="16" Margin="12,372,0,0" VerticalAlignment="Top" Width="217"/>
         <Label FontSize="16" FontFamily="Champagne &amp; Limousines" Content="Nivel" x:Name="Nivel" HorizontalAlignment="Left" Margin="10,342,0,0" VerticalAlignment="Top" Width="221" FontWeight="Bold" HorizontalContentAlignment="Center"/>
