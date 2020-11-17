@@ -13,14 +13,14 @@ namespace TG.data
 
         public static List<Banner> banners = new List<Banner>
         {
-            new Banner("Posto Ipiranga", caminho+"logo1.jpg"),
-            new Banner("Maria ta errada fodase 2", caminho+"logo2.jpg"),
-            new Banner("Maria ta errada fodase 3", caminho+"logo3.jpg"),
-            new Banner("Maria ta errada fodase 4", caminho+"logo4.jpg"),
-            new Banner("Maria ta errada fodase 5", caminho+"logo5.jpg"),
-            new Banner("Maria ta errada fodase 6", caminho+"logo6.jpg"),
-            new Banner("Maria ta errada fodase 7", caminho+"logo7.jpg"),
-            new Banner("Maria ta errada fodase 8", caminho+"logo8.jpg"),
+            new Banner("UNIPRO", caminho+"logo1.jpg"),
+            new Banner("ESPAÇO DO SABER", caminho+"logo2.jpg"),
+            new Banner("EVOLUÇÂO CURSOS", caminho+"logo3.jpg"),
+            new Banner("DUOCHAP", caminho+"logo4.jpg"),
+            new Banner("AGILITY PERFORMANCE", caminho+"logo5.jpg"),
+            new Banner("GREENCODE", caminho+"logo6.jpg"),
+            new Banner("IDEIA CURSOS", caminho+"logo7.jpg"),
+            new Banner("DALE DELE", caminho+"logo8.jpg"),
         };
     }
 }
