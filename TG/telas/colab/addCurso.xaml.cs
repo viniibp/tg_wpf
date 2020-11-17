@@ -38,7 +38,7 @@ namespace TG.telas.colab
 
         private string urlImagem(string id)
         {
-            imageHelper.SalvarCertificado(certificado.Source, id);
+            ImageHelper.SalvarCertificado(certificado.Source, id);
             return id;
         }
 
@@ -68,7 +68,7 @@ namespace TG.telas.colab
 
         private void getImage(object sender, RoutedEventArgs e)
         {
-            certificado.Source = imageHelper.FileDialog();
+            certificado.Source = ImageHelper.FileDialog();
         }
     }
 }

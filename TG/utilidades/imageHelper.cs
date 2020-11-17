@@ -7,7 +7,7 @@ using System.Windows.Media.Imaging;
 
 namespace TG.utilidades
 {
-    public class imageHelper : Object
+    public class ImageHelper : Object
     {
 
         public static BitmapImage FileDialog()
@@ -22,6 +22,8 @@ namespace TG.utilidades
             }
             else return new BitmapImage();
         }
+
+        public static BitmapImage ImagemUrl(string url) => new BitmapImage(new Uri(url));
 
         public static void SalvarCertificado(ImageSource imageSource, string newName)
         {

@@ -16,18 +16,18 @@ namespace TG
         {
 
             InitializeComponent();
-            nomeUsuario.Text = "admin";
+            nomeUsuario.Text = "prog";
             senha.Password = "123";
             //Qualquercoisa();
 
-            
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
             usuario.Entrar();
-            Maiscoisa();
+            //Maiscoisa();
             Hide();
             LimparCampos();
             new main().ShowDialog();
