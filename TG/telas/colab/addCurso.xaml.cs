@@ -63,7 +63,7 @@ namespace TG.telas.colab
 
         private bool TudoPreenchido()
         {
-            if(nomeCurso.Text.equals("") && areaCurso.Text.equals(""))
+            if(nomeCurso.Text.Equals("") && areaCurso.Text.Equals(""))
             return false;
             else return true;
         }
