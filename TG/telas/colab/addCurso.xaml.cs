@@ -63,7 +63,9 @@ namespace TG.telas.colab
 
         private bool TudoPreenchido()
         {
-            return true;
+            if(nomeCurso.Text.equals("") && areaCurso.Text.equals(""))
+            return false;
+            else return true;
         }
 
         private void getImage(object sender, RoutedEventArgs e)
