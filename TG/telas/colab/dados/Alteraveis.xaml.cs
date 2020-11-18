@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TG.modelos;
+using TG.modelos.Documentacao;
 
 namespace TG.telas.colab.dados
 {
@@ -66,6 +67,7 @@ namespace TG.telas.colab.dados
             if (!newTelefone.Text.Equals(""))
             {
                 Colaborador f = Session.GetColaborador();
+                if (f.Contatos == null) f.Contatos = new Contato();
                 f.Contatos.AddTelefone(newTelefone.Text);
                 LoadTelefones(f.Contatos.Telefones);
                 newTelefone.Clear();

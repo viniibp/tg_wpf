@@ -58,35 +58,35 @@ namespace TG
 
             var documentos = new modelos.Documentacao.Documentos
             {
-                CPF = "222.222.222-22",
-                RG = "11.111.111-1",
+                CPF = "111.111.111-11",
+                RG = "22.222.222-2",
                 CarteiraTrabalho = carteiratrabalho,
             };
 
             var dt = new modelos.Documentacao.DadosTrabalhistas
             {
-                Registro = "222222-2",
-                Cargo = "programador",
-                Setor = "TI",
+                Registro = "333333-3",
+                Cargo = "Financeiro",
+                Setor = "Administração",
                 DataAdmissao = DateTime.Today,
                 JornadaTrabalho = 8,
-                Salario = 2_050.00f,
+                Salario = 3_180.00f,
             };
 
             var dp = new modelos.Documentacao.DadosPessoais
             {
                 DataNascimento = new DateTime(2000, 10, 13),
                 EstadoCivil = "Solteiro",
-                Genero = "n sei",
-                Sexo = "Feminino",
-                Idade = 23,
-                QtdFilhos = 2
+                Genero = "Hetero",
+                Sexo = "Masculino",
+                Idade = 20,
+                QtdFilhos = 0
             };
 
             var police = new Colaborador
             {
-                Nome = "Iuri Paz",
-                Username = "prog",
+                Nome = "Igor Senne",
+                Username = "fin",
                 Senha = new MD5Hash().GetMd5Hash("123"),
                 AtivoContratado = true,
                 Documentos = documentos,

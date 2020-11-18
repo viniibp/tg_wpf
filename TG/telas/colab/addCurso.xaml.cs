@@ -30,8 +30,8 @@ namespace TG.telas.colab
         {
             var curso = Curso();
             curso.URLCertificado = urlImagem(curso.Id.ToString()+".jpg");
-            //Colaborador f = Session.GetColaborador();
-            //f.AdicionarCurso(curso);
+            Colaborador f = Session.GetColaborador();
+            f.AdicionarCurso(curso);
         }
 
         private ComboBoxItem item(object o) => (ComboBoxItem)o; 
