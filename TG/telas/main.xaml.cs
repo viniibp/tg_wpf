@@ -11,14 +11,13 @@ namespace TG.telas.colab
 
     public partial class main : Window
     {
-        Colaborador colaborador;
 
         public main()
         {
             InitializeComponent();
             new menu.Menu(container: menuGrid, painel: painel);
             Abrir(new home());
-            colaborador = Session.GetColaborador();
+            var colaborador = Session.GetColaborador();
             nomeLogado.Content = colaborador.Nome;
             setor.Content = colaborador.DadosTrabalhistas[0].Setor;
             LoadTop5();
@@ -61,7 +60,7 @@ namespace TG.telas.colab
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Abrir(new CursosDetalhados(colaborador));
+            Abrir(new CursosDetalhados(Session.GetColaborador()));
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

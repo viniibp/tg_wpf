@@ -16,8 +16,8 @@
                 <DropShadowEffect Color="Gray"/>
             </Rectangle.Effect>
             <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                    <GradientStop x:Name="init" Color="#FF6448FE" Offset="0.3"/>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0" Opacity=".9">
+                    <GradientStop x:Name="init" Color="#FF6448FE" Offset="0.5"/>
                     <GradientStop x:Name="end" Color="#FF5FC6FF" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>

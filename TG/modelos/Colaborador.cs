@@ -35,35 +35,6 @@ namespace TG.modelos
 
         // ----------------------------------------------------------------------------------------------------
 
-        public string TempoRegistrado()
-        {
-            if (DadosTrabalhistas == null) return "Recente";
-
-            //DateTime hoje = DateTime.Today;
-            //DateTime primeiroDia = DadosTrabalhistas[DadosTrabalhistas.Count - 1].DataAdmissao;
-
-            //TimeSpan total = (primeiroDia - hoje);
-            //int ano = total.Days/30/12;
-            //Console.WriteLine(total);
-            //int mes = total.Days % 30;
-            return "!pronto";
-        }
-
-        public int CargaHorariaTotal()
-        {
-            if (Formacoes == null) Formacoes = new List<Formacao>();
-            if (Formacoes.Count != 0)
-            {
-                int total = 0;
-                //foreach (Formacao curso in Formacoes)
-                //{
-                //    if (curso.Valido) total += curso.CargaHoraria;
-                //}
-                return total;
-            }
-            else return 0;
-        }
-
         public int Ranking() => new ColaboradorDAO().Ranking(Id) + 1;
 
 

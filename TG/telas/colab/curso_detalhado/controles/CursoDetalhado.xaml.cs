@@ -23,7 +23,7 @@ namespace TG.telas.colab.curso_detalhado.controles
             var random = new Random().Next(0,4);
 
             Color newInit = (Color)ColorConverter.ConvertFromString(inits[random]);
-            Color newEnd = (Color)ColorConverter.ConvertFromString(inits[random]);
+            Color newEnd = (Color)ColorConverter.ConvertFromString(ends[random]);
             init.Color = newInit;
             init.Color = newEnd;
         }
