@@ -25,10 +25,10 @@ namespace TG.telas.colab
             if (TudoPreenchido())
             {
                 alert.Visibility = Visibility.Hidden;
-                //var curso = Curso();
-                //curso.URLCertificado = urlImagem(curso.Id.ToString()+".jpg");
-                //Colaborador f = Session.GetColaborador();
-                //f.AdicionarCurso(curso);
+                var curso = Curso();
+                curso.URLCertificado = urlImagem(curso.Id.ToString()+".jpg");
+                Colaborador f = Session.GetColaborador();
+                f.AdicionarCurso(curso);
                 dr.IsOpen = false;
                 MessageBox.Show("Sucesso","O curso foi registrado com sucesso!", MessageBoxButton.OK);
             }

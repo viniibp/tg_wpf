@@ -16,8 +16,8 @@ namespace TG
         {
 
             InitializeComponent();
-            nomeUsuario.Text = "prog";
-            senha.Password = "123";
+            //nomeUsuario.Text = "";
+            //senha.Password = "123";
             //Qualquercoisa();
 
 
@@ -27,12 +27,15 @@ namespace TG
         {
             var usuario = new Usuario{ Username = nomeUsuario.Text, Senha = senha.Password};
             usuario.Entrar();
-            //Maiscoisa();
-            Hide();
-            LimparCampos();
-            new main().ShowDialog();
-            Show();
-            nomeUsuario.Focus();
+            if (Session.GetColaborador() != null)
+            {
+                //Maiscoisa();
+                Hide();
+                LimparCampos();
+                new main().ShowDialog();
+                Show();
+                nomeUsuario.Focus();
+            }
 
         }
         public void Maiscoisa()
@@ -54,20 +57,22 @@ namespace TG
          }
         public void Qualquercoisa()
         {
-            var carteiratrabalho = new modelos.Documentacao.CarteiraTrabalho("2222", "0222");
+            var carteiratrabalho = new modelos.Documentacao.CarteiraTrabalho("4444", "4444");
 
             var documentos = new modelos.Documentacao.Documentos
             {
-                CPF = "111.111.111-11",
+                CPF = "999.999.999-99",
                 RG = "22.222.222-2",
                 CarteiraTrabalho = carteiratrabalho,
+                NumeroReservista = "123456789",
+               TituloEleitoral = "123456789",
             };
 
             var dt = new modelos.Documentacao.DadosTrabalhistas
             {
-                Registro = "333333-3",
-                Cargo = "Financeiro",
-                Setor = "Administração",
+                Registro = "555555-3",
+                Cargo = "Telefonista",
+                Setor = "Vendas",
                 DataAdmissao = DateTime.Today,
                 JornadaTrabalho = 8,
                 Salario = 3_180.00f,
@@ -85,8 +90,8 @@ namespace TG
 
             var police = new Colaborador
             {
-                Nome = "Igor Senne",
-                Username = "fin",
+                Nome = "Vinicius",
+                Username = "Vini",
                 Senha = new MD5Hash().GetMd5Hash("123"),
                 AtivoContratado = true,
                 Documentos = documentos,

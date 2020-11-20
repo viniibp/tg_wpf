@@ -53,8 +53,12 @@ namespace TG.telas.colab
 
         private void PrepararCurso(Formacao f)
         {
-            CursoDetalhado cd = new CursoDetalhado(f);
-            painel.Children.Add(cd);
+            if (f.Valido)
+            {
+                CursoDetalhado cd = new CursoDetalhado(f);
+                painel.Children.Add(cd);
+            }
         }
+
     }
 }
