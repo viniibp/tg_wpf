@@ -3,6 +3,7 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 using TG.modelos;
 using TG.utilidades;
 
@@ -20,15 +21,19 @@ namespace TG.banco
 
         internal Colaborador Entrar(Usuario usuario)
         {
-            var md5 = new MD5Hash();
+            if (TestConnection())
+            {
+                var md5 = new MD5Hash();
 
-            var funcionario = collection.Find(
-                func =>
-                    usuario.Username == func.Username &&
-                    md5.GetMd5Hash(usuario.Senha).Equals(func.Senha)
-            ).SingleOrDefault();
-             
-            return funcionario;
+                var funcionario = collection.Find(
+                    func =>
+                        usuario.Username == func.Username &&
+                        md5.GetMd5Hash(usuario.Senha).Equals(func.Senha)
+                ).SingleOrDefault();
+
+                return funcionario;
+            }
+            else return null;
         }
 
         public List<Colaborador> ListRanking() => FindAll().OrderBy(c => c.Ranking()).ToList();
